@@ -3,7 +3,7 @@ import { useEffect, useRef } from 'react';
 import ScrollReveal from 'scrollreveal';
 import {Link} from 'react-router-dom'
 import {useFormik} from 'formik';
-
+import "./About.css"
 
 
 const themes = [
@@ -87,9 +87,12 @@ function About() {
       reset: true,
       delay: 0,
     });
+    
   }, []);
+  
   return (
-    <section className="container scroll-reveal">
+   <div>
+     <section className="container scroll-reveal">
       <div className="info-container">
         <div className="circle circle-one"></div>
         <div className="form-container">
@@ -114,6 +117,54 @@ function About() {
         <div className="circle circle-two"></div>
       </div>
     </section>
+    <section className="advantages scroll-reveal">
+      <div>
+        <div className="title">Bizim üstünlüklərimiz</div>
+        <div className="info">
+          <div className="infoContainers">
+            <div className="infoContainersIcon"></div>
+            <div className="infoContainersInfo">
+              <h3>aaaa</h3>
+              <p>asdf</p>
+            </div>
+          </div>
+          <div className="infoContainers">
+            <div className="infoContainersIcon"></div>
+            <div className="infoContainersInfo">
+              <h3>aaaa</h3>
+              <p>asdf</p>
+            </div>
+          </div>
+          <div className="infoContainers">
+            <div className="infoContainersIcon"></div>
+            <div className="infoContainersInfo">
+              <h3>aaaa</h3>
+              <p>asdf</p>
+            </div>
+          </div>
+       
+        </div>
+       
+      </div>
+    </section>
+    <section className="rules scroll-reveal">
+      <div className="rulesBtns">
+        
+      </div>
+<div>
+  <div className="rulesTitle">
+    <h1>Necə işləyir</h1>
+  </div>
+  <div className="rulesInfo">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
+      r, dolorem explicabo vel? Quas sit 
+      placeat, doloremque impedit, eveniet 
+      ab illum totam repellat eligendi quis vol
+      uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+  </div>
+</div>
+    </section>
+   </div>
   );
 }
 

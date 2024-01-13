@@ -1,0 +1,74 @@
+/* ADVANTAGES */
+.advantages{
+    width: 100%;
+    background-color: #3dd4c3; 
+    color: white;
+    margin-top: 30px;
+    font-family: "poppins";
+}
+.advantages>div{
+    width: 90%;
+    margin:70px auto 0 auto;
+}
+.advantages .title{
+    font-size: 45px;
+    text-align: center; 
+    padding-bottom: 20px;
+}
+.advantages .info{
+    display: flex;
+    justify-content:space-around ;
+    width:100% ;
+
+}
+.advantages .infoContainers{
+    margin: 10px;
+}
+.advantages .infoContainersIcon{
+    width: 150px;
+    height: 160px;
+    background-color: #fff;
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(30px);
+    padding: 1rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    z-index: 100;
+}
+.advantages .infoContainersInfo{
+   color: black;
+    width: 100%;
+    text-align: center;
+}
+/* RULES */
+.rules{
+    margin-top:10px ;
+    width: 100%;
+}
+.rules>div{
+    width: 95%;
+ margin: 20px auto;
+    min-height:300px;
+    border: 1px solid hsla(0, 0%, 65%, 0.441);
+ border-radius: 10px;
+}
+.rulesTitle{
+    font-size: 45px;
+    text-align: center;
+}
+.rulesInfo{
+    margin: 20px;
+}
+
+@media(max-width:700px){
+    .advantages{
+        padding-top:5px ;
+    }
+    .advantages .info{
+       flex-wrap: wrap;
+    }
+}
