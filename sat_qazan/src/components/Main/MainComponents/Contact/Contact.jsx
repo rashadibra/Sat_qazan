@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import ScrollReveal from 'scrollreveal';
+import "./Contact.css"
 
 const ContactForm = () => {
   // CLASSS
@@ -75,14 +76,14 @@ console.log(UserMessage);
       <div className="container">
         <div className="contactInfo">
           <div className="box">
-            <div className="icon"><FontAwesomeIcon icon={faPhone} /></div>
+            <div className="icon"><FontAwesomeIcon icon={faPhone} style={{color:"white"}} /></div>
             <div className="text">
               <h3>Telefon</h3>
               <p>+(994)510-727-50-95</p>
             </div>
           </div>
           <div className="box">
-            <div className="icon"><FontAwesomeIcon icon={faEnvelope} /></div>
+            <div className="icon"><FontAwesomeIcon icon={faEnvelope} style={{color:"white"}}/></div>
             <div className="text">
               <h3>Email</h3>
               <p>İbrahimlirsad666@gmail.com</p>
@@ -102,7 +103,7 @@ console.log(UserMessage);
             </div>
             <div className="inputBox">
               <textarea required="required" value={message} onChange={handleMessageChange}></textarea>
-              <span>Mesaj yazın (minimum 10 harf)</span>
+              <span>Mesaj yazın</span>
             </div>
             <div className="inputBox">
               <input className='inputBox_btn' type="submit" value="Göndər"/>

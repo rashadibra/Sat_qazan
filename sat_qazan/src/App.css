@@ -4,9 +4,9 @@
   --primary-color: #0f3460;
 }
 
-#root {
-  background-color: #1b2223;
-}
+ #root {
+  background-color: #ffffff;
+} 
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +16,7 @@
 .form-container h1,
 .Category-info-container p,
 .Category-info-container h1 {
-  color: white;
+  color: rgb(0, 0, 0);
 }
 html {
   scroll-behavior: smooth;
@@ -154,10 +154,7 @@ body {
   }
 }
 
-.Diqqet {
-  color: brown;
-  text-align: center;
-}
+
 
 @media (max-width: 600px) {
   .login-container p {
@@ -173,4 +170,9 @@ body {
     font-size: 14px;
     opacity: 0.8;
   }
+}
+
+.Diqqet {
+  color: rgb(159, 44, 44);
+  text-align: center;
 }

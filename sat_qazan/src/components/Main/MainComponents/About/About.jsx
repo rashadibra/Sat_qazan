@@ -98,18 +98,17 @@ function About() {
             alt="illustration"
             className="illustration"
           />
-              <h1>Sat qazan nədir </h1>
-       <p>Sat Qazan, qeyri-adi alış-veriş təcrübəsi və sərfəli əlaqələr qurmaq fürsəti təklif edən onlayn marketinq platformasıdır. Saytımızda müxtəlif kateqoriyalar üzrə
-         məhsulları paylaşaraq, alıcı taparaq pul qazana bilərsiniz.</p>
+              <h1>SatQazan nədir </h1>
+       <p>SatQazan, qeyri-adi alış-veriş təcrübəsi və heç bir maliyyə dəstəyi olmadan pul qazanmaq fürsəti təklif edən onlayn alış-satış platformasıdır. Saytımızda Linkləri yerləşdirilmiş sosial şəbəkələrimizə qoşulub məhsulları paylaşaraq, alıcı taparaq pul qazana bilərsiniz.</p>
          <br />
-         <hr style={{color:'white'}}/>
+         <hr />
          
-         <h1>Niyə Sat qazan </h1>
+         <h1>Niyə SatQazan </h1>
          <p>-İstifadəsi asan:İstifadəçi dostu interfeysimizlə tez və sadəcə işə başlayın.</p>
          <p>-Kateqoriyaların geniş diapazonu: Elektronikadan tutmuş modaya qədər geniş çeşiddə məhsullarla müxtəlifliyi hiss edin.</p>
-         <p>-Mənfəətli Linklər:Məhsullarınızı paylaşaraq və alıcılar taparaq pul qazanın.</p>
+         <p>-Mənfəətli Paylaşımlar:Məhsullarımızı paylaşaraq və alıcılar taparaq pul qazanın.</p>
          <p>-İcma dəstəyi:WhatsApp qrupları ilə əlaqə saxlayın, təcrübələrinizi bölüşün və cəmiyyətə töhfə verin.</p>
-         <span className="Diqqet"><p>Sat Qazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
+         <span className="Diqqet"><p>SatQazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
          
         </div>
         <div className="circle circle-two"></div>
