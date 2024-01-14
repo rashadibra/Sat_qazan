@@ -205,20 +205,7 @@ function About() {
   <div className="rulesTitle">
     <h1 >SatQazan piramidası</h1>
   </div>
-  <div className="rulesInfo">
-    <Collapse
-    style={{width:"300px"}}
-      items={[{ key: '1', label: '1-ci mərhələ', children: <p>{text}</p> }]}
-    />
-      <Collapse
-    style={{width:"400px"}}
-      items={[{ key: '1', label: '2-ci mərhələ', children: <p>{text}</p> }]}
-    />
-      <Collapse
-    style={{width:"500px"}}
-      items={[{ key: '1', label: '3-cü mərhələ', children: <p>{text}</p> }]}
-    />
-  </div>
+
 </div>
     </section>
    </div>

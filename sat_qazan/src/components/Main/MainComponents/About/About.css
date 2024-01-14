@@ -149,6 +149,9 @@
     .Header >div{
         right: 20px;
     }
+    .Header{
+        margin-bottom: 0;
+    }
 }
 @media(max-width:750px){
     .rulesBtns button{
