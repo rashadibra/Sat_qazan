@@ -142,7 +142,7 @@ function About() {
              İndi başlayın və qazanın!</p>
       </div>
     </section>
-     <section className="container scroll-reveal">
+     <section className="container ">
       <div className="info-container">
         <div className="circle circle-one"></div>
         <div className="form-container">
@@ -167,7 +167,7 @@ function About() {
         <div className="circle circle-two"></div>
       </div>
     </section>
-    <section className="advantages scroll-reveal">
+    <section className="advantages ">
       <div>
         <div className="title">Bizim üstünlüklərimiz</div>
         <div className="info">
@@ -196,7 +196,7 @@ function About() {
        
       </div>
     </section>
-    <section className="rules scroll-reveal">
+    <section className="rules ">
       <div className="rulesBtns">
         <button className={`RulesBtn1 ${BtnActive?'activeRulesBtn':''}`} onClick={()=>howItWorks()}>Piramida</button>
         <button className={`RulesBtn2 ${BtnActive?'':'activeRulesBtn'}`} onClick={()=>businessprinciples()}>İş prinsipləri</button>
