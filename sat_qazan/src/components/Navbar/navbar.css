@@ -18,7 +18,7 @@
         position: sticky;
         top: 0;
         z-index: 9;
-        margin-bottom:50px ;
+        /* margin-bottom:50px ; */
         border-bottom: 1px solid white;
     }
     
@@ -29,6 +29,10 @@
         text-decoration: none;
         color: white;
         transition: 0.5s;
+    }
+    nav .title img{
+        width: 120px;
+        border-radius: 10px;
     }
     
     nav ul {
@@ -82,7 +86,6 @@
         nav {
             flex-direction: column;
             align-items: flex-start;
-            margin-bottom:20px ;
             position: relative;
             z-index: 9999;
         }

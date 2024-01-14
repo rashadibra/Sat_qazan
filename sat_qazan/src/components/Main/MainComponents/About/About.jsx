@@ -1,11 +1,37 @@
 import React from "react";
-import { useEffect, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
-import {Link} from 'react-router-dom'
 import {useFormik} from 'formik';
+import { Collapse, Divider } from 'antd';
 import "./About.css"
-
-
+import Headerİmg from './3d-representation-reselling-market.jpg'
+import Headerİmg2 from './BgcHeader2.jpg'
+const text = `
+  A dog is a type of domesticated animal.
+  Known for its loyalty and faithfulness,
+  it can be found as a welcome guest in many households across the world.
+`;
+const howItworks=` <div className="rulesTitle">
+<h1 >SatQazan piramidası</h1>
+</div>
+<div className="rulesInfo">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
+  r, dolorem explicabo vel? Quas sit 
+  placeat, doloremque impedit, eveniet 
+  ab illum totam repellat eligendi quis vol
+  uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+</div>`
+const businessPrinciples=
+` <div className="rulesTitle">
+<h1>İş prinsipləri</h1>
+</div>
+<div className="rulesInfo">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
+  r, dolorem explicabo vel? Quas sit 
+  placeat, doloremque impedit, eveniet 
+  ab illum totam repellat eligendi quis vol
+  uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+</div>`
 const themes = [
   {
     background: "#1A1A2E",
@@ -57,9 +83,19 @@ const displayThemeButtons = () => {
   });
 };
 
-
-
 function About() {
+  const [BtnActive, setBtnActive] = useState(true)
+
+  const howItWorks=()=>{
+    const RulesContainer =document.querySelector('.RulesContainer');
+    RulesContainer.innerHTML=howItworks;
+    setBtnActive(true)
+  }
+  const businessprinciples=()=>{
+    const RulesContainer =document.querySelector('.RulesContainer');
+    RulesContainer.innerHTML=businessPrinciples;
+    setBtnActive(false)
+  }
   // FORMIK
   const {values,handleChange,handleReset,handleSubmit} = useFormik({
     initialValues: {
@@ -92,6 +128,20 @@ function About() {
   
   return (
    <div>
+    <section className="Header scroll-reveal">
+      <img src={Headerİmg2} alt="" />
+      <div>
+        <b>Sosial Mediadan Qazan</b>
+        <br />
+        <b>Sat və Qazan ilə gəlir karvanı yolda!</b>
+        <hr />
+        <p>Onlayn iş dünyasına sürətli bir giriş etmək <br />
+           istərdinizmi? Sat Qazan ilə öz sosial media <br />
+           hesablarınızdan gəlir əldə edin. <span>WhatsApp</span>,<br />
+            Instagram, TikTok... Hansını bəyənirsiniz?<br />
+             İndi başlayın və qazanın!</p>
+      </div>
+    </section>
      <section className="container scroll-reveal">
       <div className="info-container">
         <div className="circle circle-one"></div>
@@ -142,25 +192,32 @@ function About() {
               <p>asdf</p>
             </div>
           </div>
-       
         </div>
        
       </div>
     </section>
     <section className="rules scroll-reveal">
       <div className="rulesBtns">
-        
+        <button className={`RulesBtn1 ${BtnActive?'activeRulesBtn':''}`} onClick={()=>howItWorks()}>Piramida</button>
+        <button className={`RulesBtn2 ${BtnActive?'':'activeRulesBtn'}`} onClick={()=>businessprinciples()}>İş prinsipləri</button>
       </div>
-<div>
+<div className="RulesContainer">
   <div className="rulesTitle">
-    <h1>Necə işləyir</h1>
+    <h1 >SatQazan piramidası</h1>
   </div>
   <div className="rulesInfo">
-    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
-      r, dolorem explicabo vel? Quas sit 
-      placeat, doloremque impedit, eveniet 
-      ab illum totam repellat eligendi quis vol
-      uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+    <Collapse
+    style={{width:"300px"}}
+      items={[{ key: '1', label: '1-ci mərhələ', children: <p>{text}</p> }]}
+    />
+      <Collapse
+    style={{width:"400px"}}
+      items={[{ key: '1', label: '2-ci mərhələ', children: <p>{text}</p> }]}
+    />
+      <Collapse
+    style={{width:"500px"}}
+      items={[{ key: '1', label: '3-cü mərhələ', children: <p>{text}</p> }]}
+    />
   </div>
 </div>
     </section>

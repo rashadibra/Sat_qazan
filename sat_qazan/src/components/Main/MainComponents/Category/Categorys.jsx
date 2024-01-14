@@ -22,8 +22,8 @@ function Categorys() {
   return (
     <div>
       <section className='Info-SatQazan'>
-        <h1>Necə işləyir</h1>
-        <p>Qruplarımızda və ya səhifələrimizdə paylaşılan elanları paylaşıb müştəri taparaq gəlir əldə edin.
+        <h1>Başlayaq</h1>
+        <p>Qruplarımızda və ya səhifələrimizə daxil ol,paylaşılan elanları paylaşıb müştəri taparaq gəlir əldə et.
         </p>
       </section>
     <section className="Category">
@@ -31,7 +31,7 @@ function Categorys() {
 <div className="Category-circle Category-circle-one"></div>
 <div className="Category-info-container">
 <img src="" alt="" />
-<h1>Aksesuarlar</h1>
+<h1>Whatsapp</h1>
  <br />
 </div>
 </div>
@@ -39,7 +39,7 @@ function Categorys() {
 <div className="Category-circle Category-circle-one"></div>
 <div className="Category-info-container">
 <img src="" alt="" />
-<h1>Bijuteriyalar</h1>
+<h1>Instagram</h1>
  <br />
 </div>
 </div>
@@ -47,7 +47,7 @@ function Categorys() {
 <div className="Category-circle Category-circle-one"></div>
 <div className="Category-info-container">
 <img src="" alt="" />
-<h1>Geyimlər</h1>
+<h1>Tiktok</h1>
  <br />
 </div>
 </div>

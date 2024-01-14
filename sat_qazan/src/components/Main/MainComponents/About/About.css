@@ -46,13 +46,12 @@
 }
 /* RULES */
 .rules{
-    margin-top:10px ;
+    margin-top:40px ;
     width: 100%;
 }
-.rules>div{
+.rules>div:nth-child(2){
     width: 95%;
  margin: 20px auto;
-    min-height:300px;
     border: 1px solid hsla(0, 0%, 65%, 0.441);
  border-radius: 10px;
 }
@@ -61,8 +60,69 @@
     text-align: center;
 }
 .rulesInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin: 20px;
 }
+.rulesBtns{
+    display: flex;
+    justify-content: center;
+}
+.rulesBtns button{
+    border: 0px;
+    transition: 0.3s;
+    font-size: 25px;
+    border-radius: 30px;
+   padding: 25px 90px;
+   margin: 0 20px;
+}
+.rulesBtns button:hover{
+    background-color: #3dd4c3;
+    color: white;
+}
+.activeRulesBtn{
+    background-color: #3dd4c3;
+    color: white;
+}
+/* HEADER */
+.Header{
+    background-color: #a5e1ed;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 80px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Header img{
+    width: 100%;
+    position: relative;
+}
+.Header >div{
+    position: absolute;
+    right: 60px;
+    top: 70px;
+}
+.Header hr{
+    color: #fff;
+}
+.Header >div b:nth-child(1){
+    font-size: 35px;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    color: #fff;
+}
+.Header >div b:nth-child(3){
+    font-size: 25px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    color: #f5f5f5;
+}
+.Header >div p{
+    color: #fff;
+}
+/* HEADER MEDIA */
+
 
 @media(max-width:700px){
     .advantages{
@@ -71,4 +131,58 @@
     .advantages .info{
        flex-wrap: wrap;
     }
+    .advantages .title{
+        font-size: 25px;
+    }
+}
+
+
+
+@media(max-width:1125px){
+    .Header >div b:nth-child(1){
+        font-size: 25px;
+    }
+    .Header >div b:nth-child(3){
+        font-size: 20px;}
+        .Header >div p{
+            color: #fff;
+            font-size: 15px;
+        }
+    .Header >div{
+        right: 30px;
+    }
+}
+
+@media(max-width:880px){
+    .Header >div b:nth-child(1){
+        font-size: 23px;
+    }
+    .Header >div b:nth-child(3){
+        font-size: 18px;
+    }
+        .Header >div p{
+            font-size: 15px;
+        }
+    .Header >div{
+        right: 20px;
+    }
+}
+@media(max-width:750px){
+    .rulesBtns button{
+        padding: 20px 25px;
+        font-size: 15px;
+    }
+    .Header >div b:nth-child(1){
+        font-size: 20px;
+    }
+    .Header >div b:nth-child(3){
+        font-size: 15px;
+    }
+        .Header >div p{
+            font-size: 12px;
+        }
+    .Header >div{
+        right: 10px;
+    }
+
 }

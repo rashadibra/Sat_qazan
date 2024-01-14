@@ -1,7 +1,6 @@
 import React from 'react';
 import "./footer.css"
 import {Link} from 'react-router-dom'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 function Footer() {
   return (
     <div className='footer'>
@@ -36,6 +35,7 @@ function Footer() {
           <li className="menu__item"><Link to='Contact' className="menu__link" href="#">Bizimlə əlaqə</Link></li>
         </ul>
         <p>&copy;2024 Bütün hüquqlar qorunur.</p>
+        <a href="https://www.freepik.com/free-photo/3d-render-handshake-icon-isolated-business-concept_33062169.htm#query=3d%20money%20agreement&position=5&from_view=search&track=ais&uuid=ef70fe84-3529-4bbb-b75f-912b39835b3c">Image by upklyak</a> on Freepik
       </footer>
     </div>
   );
