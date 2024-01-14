@@ -2,9 +2,7 @@ import React from "react";
 import { useEffect, useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 import {useFormik} from 'formik';
-import { Collapse, Divider } from 'antd';
 import "./About.css"
-import Headerİmg from './3d-representation-reselling-market.jpg'
 import Headerİmg2 from './BgcHeader2.jpg'
 const text = `
   A dog is a type of domesticated animal.
@@ -171,27 +169,9 @@ function About() {
       <div>
         <div className="title">Bizim üstünlüklərimiz</div>
         <div className="info">
-          <div className="infoContainers">
-            <div className="infoContainersIcon"></div>
-            <div className="infoContainersInfo">
-              <h3>aaaa</h3>
-              <p>asdf</p>
-            </div>
-          </div>
-          <div className="infoContainers">
-            <div className="infoContainersIcon"></div>
-            <div className="infoContainersInfo">
-              <h3>aaaa</h3>
-              <p>asdf</p>
-            </div>
-          </div>
-          <div className="infoContainers">
-            <div className="infoContainersIcon"></div>
-            <div className="infoContainersInfo">
-              <h3>aaaa</h3>
-              <p>asdf</p>
-            </div>
-          </div>
+         <p>1)<b>Sərmayə qoymadan qazanc əldə edin:</b>Sat Qazan öz istifadəçilərinə pul qazanmaq üçün heç bir ilkin investisiya qoymadan gəlir əldə etmək imkanı təqdim edir. Pulsuz başlayın, məhsulları öz sosial media hesablarınızda paylaşın və qazanmağa başlayın.</p>
+         <p>2)<b>Azad qrafik:</b> Sat Qazan istifadəçilərə öz sürətlərində işləmək azadlığı verir. Öz məhsullarınızı paylaşın, müştəriləri cəlb edin və gəlirinizi artırın. İşinizə tam nəzarət edirsiniz, ona görə də öz tempinizdə və cədvəlinizdə işləyə bilərsiniz.</p>
+         <p>3)<b>Müştəriləri tapın, indi qazanın:</b>Platforma öz istifadəçilərinə tez və effektiv şəkildə pul qazanmaq imkanı təqdim edir. Sat Qazan ilə öz müştəri bazanızı yaradın, məhsullarınızı paylaşın və ani ödənişlərlə qazancınızı əldə edin. İstifadəsi asan və praktiki prosesləri ilə gəlir əldə etmək heç vaxt asan olmayıb.</p>
         </div>
        
       </div>
@@ -202,9 +182,16 @@ function About() {
         <button className={`RulesBtn2 ${BtnActive?'':'activeRulesBtn'}`} onClick={()=>businessprinciples()}>İş prinsipləri</button>
       </div>
 <div className="RulesContainer">
-  <div className="rulesTitle">
-    <h1 >SatQazan piramidası</h1>
-  </div>
+<div className="rulesTitle">
+<h1 >SatQazan piramidası</h1>
+</div>
+<div className="rulesInfo">
+<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
+  r, dolorem explicabo vel? Quas sit 
+  placeat, doloremque impedit, eveniet 
+  ab illum totam repellat eligendi quis vol
+  uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+</div>
 
 </div>
     </section>
