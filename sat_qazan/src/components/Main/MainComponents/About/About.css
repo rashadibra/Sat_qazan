@@ -52,6 +52,7 @@
     justify-content: center;
 }
 .rulesBtns button{
+    width: 35%;
     border: 0px;
     transition: 0.3s;
     font-size: 25px;

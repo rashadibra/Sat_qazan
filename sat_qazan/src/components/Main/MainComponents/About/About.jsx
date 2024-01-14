@@ -4,15 +4,11 @@ import ScrollReveal from 'scrollreveal';
 import {useFormik} from 'formik';
 import "./About.css"
 import Headerİmg2 from './BgcHeader2.jpg'
-const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
-`;
-const howItworks=` <div className="rulesTitle">
+
+const howItworks=` <div class="rulesTitle">
 <h1 >SatQazan piramidası</h1>
 </div>
-<div className="rulesInfo">
+<div class="rulesInfo">
 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
   r, dolorem explicabo vel? Quas sit 
   placeat, doloremque impedit, eveniet 
@@ -20,15 +16,23 @@ const howItworks=` <div className="rulesTitle">
   uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
 </div>`
 const businessPrinciples=
-` <div className="rulesTitle">
-<h1>İş prinsipləri</h1>
+`<div class="rulesTitle">
+<h1 >İş prinsipləri</h1>
 </div>
-<div className="rulesInfo">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
-  r, dolorem explicabo vel? Quas sit 
-  placeat, doloremque impedit, eveniet 
-  ab illum totam repellat eligendi quis vol
-  uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+<div class="rulesInfo">
+<p>
+1)Məhsulları izlə: Üzvünüz satış və qazanç proqramına qoşulub, təklif olunan məhsulları baxmağa və tanımağa başlayır.
+<br />
+2)Məhsul Şəkil və Xüsusiyyətlərinin Paylaşılması: Üzv, istədiyi məhsulun şəkil və xüsusiyyətlərini götürərək, öz sosial media hesabında paylaşmağa qərar verir. Bu, məhsulun tanıtımına yardım edir.
+<br />
+3)Yönləndirilmiş Alıcılar: siz, paylaşdığınız məhsulları ətrafınızda maraqlanan və məhsulu almağa qərar verən alıcıları tapmağa çalışırsız. Bu, sizin məhsulların satışından pul qazanmanıza imkan verir.
+<br />
+4)Alıcıları Bizə Yönləndirir: Üzv, potensial alıcıları bizim tərəfə yönləndirir. Bu, alıcıların məhsulu almağa qərar verməsi üçün bir kömək və təsiri təmin edir.
+<br />
+5)Məhsulu Təslim etmə və Ödəniş Almaq: Biz, üzvün təqdim etdiyi alıcıya məhsulu təqdim edirik və müqavilədə nəzərdə tutulan ödənişi qəbul edirik.
+<br />
+6)Anında Ödəniş: Üzvün əldə etdiyi qazancı mümkün olan ən qısa müddət ərzində ödəmək üçün tədbirlər görürük.
+</p>
 </div>`
 const themes = [
   {
@@ -142,7 +146,7 @@ function About() {
     </section>
      <section className="container ">
       <div className="info-container">
-        <div className="circle circle-one"></div>
+        {/* <div className="circle circle-one"></div> */}
         <div className="form-container">
         <img
             src="https://raw.githubusercontent.com/hicodersofficial/glassmorphism-login-form/master/assets/illustration.png"
@@ -162,7 +166,7 @@ function About() {
          <span className="Diqqet"><p>SatQazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
          
         </div>
-        <div className="circle circle-two"></div>
+        {/* <div className="circle circle-two"></div> */}
       </div>
     </section>
     <section className="advantages ">
@@ -178,19 +182,27 @@ function About() {
     </section>
     <section className="rules ">
       <div className="rulesBtns">
-        <button className={`RulesBtn1 ${BtnActive?'activeRulesBtn':''}`} onClick={()=>howItWorks()}>Piramida</button>
+        <button className={`RulesBtn1 ${BtnActive?'activeRulesBtn':''}`} onClick={()=>howItWorks()}>Sat Qazan Piramidası</button>
         <button className={`RulesBtn2 ${BtnActive?'':'activeRulesBtn'}`} onClick={()=>businessprinciples()}>İş prinsipləri</button>
       </div>
 <div className="RulesContainer">
 <div className="rulesTitle">
-<h1 >SatQazan piramidası</h1>
+<h1 >Sat Qazan piramidası</h1>
 </div>
 <div className="rulesInfo">
-<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem nesciunt blanditiis ipsam eos minima ullam nostrum unde pariatur, perspiciatis doloremque facere corporis natus velit nisi architecto obcaecati quisquam nobis aliquam inventore deleniti, quae culpa. Mollitia neque inventore iusto harum, voluptate eos at placeat, ducimus enim minima molestias sint dolores vel architecto laudantium quasi aperiam eveniet in earum commodi natus a ea! Natus, odio! Quia cum reprehenderit error natus pariatu
-  r, dolorem explicabo vel? Quas sit 
-  placeat, doloremque impedit, eveniet 
-  ab illum totam repellat eligendi quis vol
-  uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
+<p>
+1)Məhsulları izlə: Üzvünüz satış və qazanç proqramına qoşulub, təklif olunan məhsulları baxmağa və tanımağa başlayır.
+<br />
+2)Məhsul Şəkil və Xüsusiyyətlərinin Paylaşılması: Üzv, istədiyi məhsulun şəkil və xüsusiyyətlərini götürərək, öz sosial media hesabında paylaşmağa qərar verir. Bu, məhsulun tanıtımına yardım edir.
+<br />
+3)Yönləndirilmiş Alıcılar: siz, paylaşdığınız məhsulları ətrafınızda maraqlanan və məhsulu almağa qərar verən alıcıları tapmağa çalışırsız. Bu, sizin məhsulların satışından pul qazanmanıza imkan verir.
+<br />
+4)Alıcıları Bizə Yönləndirir: Üzv, potensial alıcıları bizim tərəfə yönləndirir. Bu, alıcıların məhsulu almağa qərar verməsi üçün bir kömək və təsiri təmin edir.
+<br />
+5)Məhsulu Təslim etmə və Ödəniş Almaq: Biz, üzvün təqdim etdiyi alıcıya məhsulu təqdim edirik və müqavilədə nəzərdə tutulan ödənişi qəbul edirik.
+<br />
+6)Anında Ödəniş: Üzvün əldə etdiyi qazancı mümkün olan ən qısa müddət ərzində ödəmək üçün tədbirlər görürük.
+</p>
 </div>
 
 </div>
