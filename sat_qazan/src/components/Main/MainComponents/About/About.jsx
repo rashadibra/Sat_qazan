@@ -4,8 +4,9 @@ import ScrollReveal from 'scrollreveal';
 import {useFormik} from 'formik';
 import "./About.css"
 import Headerİmg2 from './BgcHeader2.jpg'
+import Logo from './Logo.png'
 
-const howItworks=` <div class="rulesTitle">
+const howItworks=` <div class="rulesTitle scroll-reveal">
 <h1 >SatQazan piramidası</h1>
 </div>
 <div class="rulesInfo">
@@ -16,7 +17,7 @@ const howItworks=` <div class="rulesTitle">
   uptates pariatur? Minus nihil labore libero atque similique. Error voluptatibus ea iste. Provident sequi quidem necessitatibus.</p>
 </div>`
 const businessPrinciples=
-`<div class="rulesTitle">
+`<div class="rulesTitle scroll-reveal">
 <h1 >İş prinsipləri</h1>
 </div>
 <div class="rulesInfo">
@@ -171,7 +172,10 @@ function About() {
     </section>
     <section className="advantages ">
       <div>
-        <div className="title">Bizim üstünlüklərimiz</div>
+        <div className="title">
+          <img src={Logo} alt="" />
+          <br />
+          Bizim üstünlüklərimiz</div>
         <div className="info">
          <p>1)<b>Sərmayə qoymadan qazanc əldə edin:</b>Sat Qazan öz istifadəçilərinə pul qazanmaq üçün heç bir ilkin investisiya qoymadan gəlir əldə etmək imkanı təqdim edir. Pulsuz başlayın, məhsulları öz sosial media hesablarınızda paylaşın və qazanmağa başlayın.</p>
          <p>2)<b>Azad qrafik:</b> Sat Qazan istifadəçilərə öz sürətlərində işləmək azadlığı verir. Öz məhsullarınızı paylaşın, müştəriləri cəlb edin və gəlirinizi artırın. İşinizə tam nəzarət edirsiniz, ona görə də öz tempinizdə və cədvəlinizdə işləyə bilərsiniz.</p>
@@ -182,26 +186,26 @@ function About() {
     </section>
     <section className="rules ">
       <div className="rulesBtns">
-        <button className={`RulesBtn1 ${BtnActive?'activeRulesBtn':''}`} onClick={()=>howItWorks()}>Sat Qazan Piramidası</button>
+        <button className={`RulesBtn1 ${BtnActive?'activeRulesBtn':''}`} onClick={()=>howItWorks()}>SatQazan Piramidası</button>
         <button className={`RulesBtn2 ${BtnActive?'':'activeRulesBtn'}`} onClick={()=>businessprinciples()}>İş prinsipləri</button>
       </div>
 <div className="RulesContainer">
 <div className="rulesTitle">
-<h1 >Sat Qazan piramidası</h1>
+<h1 >SatQazan piramidası</h1>
 </div>
 <div className="rulesInfo">
 <p>
-1)Məhsulları izlə: Üzvünüz satış və qazanç proqramına qoşulub, təklif olunan məhsulları baxmağa və tanımağa başlayır.
+<b>1)</b>Məhsulları izlə: Siz Qrup və səhifələrimzə qoşulub, təklif olunan məhsullara baxmağa və tanımağa başlayırsız.
 <br />
-2)Məhsul Şəkil və Xüsusiyyətlərinin Paylaşılması: Üzv, istədiyi məhsulun şəkil və xüsusiyyətlərini götürərək, öz sosial media hesabında paylaşmağa qərar verir. Bu, məhsulun tanıtımına yardım edir.
+<b>2)</b>Məhsul Şəkil və Xüsusiyyətlərinin Paylaşılması:İstədiyiniz məhsulun şəkil və xüsusiyyətlərini götürərək, öz sosial media hesabında paylaşırsız. Bu, məhsulun tanıtımına yardım edirsiz.
 <br />
-3)Yönləndirilmiş Alıcılar: siz, paylaşdığınız məhsulları ətrafınızda maraqlanan və məhsulu almağa qərar verən alıcıları tapmağa çalışırsız. Bu, sizin məhsulların satışından pul qazanmanıza imkan verir.
+<b>3)</b>Yönləndirilmiş Alıcılar:Siz, paylaşdığınız məhsulları ətrafınızda maraqlanan və məhsulu almağa qərar verən alıcıları tapmağa çalışırsız. Bu, sizin məhsulların satışından pul qazanmanıza imkan verir.
 <br />
-4)Alıcıları Bizə Yönləndirir: Üzv, potensial alıcıları bizim tərəfə yönləndirir. Bu, alıcıların məhsulu almağa qərar verməsi üçün bir kömək və təsiri təmin edir.
+<b>4)</b>Alıcıları Bizə Yönləndirir:Potensial alıcıları bizim tərəfə yönləndirsiz. Bu, alıcıların məhsulu almağa qərar verməsi üçün bir kömək və təsiri təmin edir.
 <br />
-5)Məhsulu Təslim etmə və Ödəniş Almaq: Biz, üzvün təqdim etdiyi alıcıya məhsulu təqdim edirik və müqavilədə nəzərdə tutulan ödənişi qəbul edirik.
+<b>5)</b>Məhsulu Təslim etmə və Ödəniş Almaq: Biz, sizin təqdim etdiyiniz alıcıya məhsulu təqdim edirik və müqavilədə nəzərdə tutulan ödənişi qəbul edirik.
 <br />
-6)Anında Ödəniş: Üzvün əldə etdiyi qazancı mümkün olan ən qısa müddət ərzində ödəmək üçün tədbirlər görürük.
+<b>6)</b>Anında Ödəniş: Sizin qazancınızı mümkün olan ən qısa müddət ərzində ödəmək üçün tədbirlər görürük.
 </p>
 </div>
 
