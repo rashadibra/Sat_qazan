@@ -22,9 +22,10 @@ function Categorys() {
   return (
     <div>
       <section className='Info-SatQazan'>
-        <h1>Başlayaq</h1>
-        <p>Qruplarımızda və ya səhifələrimizə daxil ol,paylaşılan elanları paylaşıb müştəri taparaq gəlir əldə et.
+        <h1>Başlayın</h1>
+        <p >Qruplarımızda və ya səhifələrimizə daxil ol, paylaşılan elanları paylaşıb müştəri taparaq gəlir əldə et.
         </p>
+        <b>Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız şərtdir.</b>
       </section>
     <section className="Category">
     <div className=" Category-container scroll-reveal">

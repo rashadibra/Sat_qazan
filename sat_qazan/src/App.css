@@ -164,6 +164,7 @@ body {
     width: 6.5rem;
     height: 6.5rem;
   }
+
 }
 @media(max-width:420px){
   .info-container p {
@@ -171,7 +172,6 @@ body {
     opacity: 0.8;
   }
 }
-
 .Diqqet {
   color: rgb(159, 44, 44);
   text-align: center;
