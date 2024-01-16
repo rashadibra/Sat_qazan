@@ -12,8 +12,8 @@
   padding: 0;
   box-sizing: border-box;
 }
-.form-container p,
-.form-container h1,
+.form-SatQazan p,
+.form-SatQazan h1,
 .Category-info-container p,
 .Category-info-container h1 {
   color: rgb(0, 0, 0);
@@ -41,21 +41,21 @@ body {
   -o-transition: background 0.2s ease;
 }
 
-.container {
+.SatQazan {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.info-container {
+.SatQazan .info-SatQazan {
   position: relative;
   width: 98%;
 }
-.info-container p {
+.SatQazan .info-SatQazan p {
   font-size: 20px;
   opacity: 0.8;
 }
-.form-container {
+.SatQazan .form-SatQazan {
   border: 1px solid hsla(0, 0%, 65%, 0.158);
   box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
   border-radius: 10px;
@@ -68,7 +68,7 @@ body {
   -o-border-radius: 10px;
 }
 
-.circle {
+.SatQazan .circle {
   width: 8rem;
   height: 8rem;
   background: #0ef6cc;
@@ -80,14 +80,14 @@ body {
   position: absolute;
 }
 
-.illustration {
+.SatQazan .Containerillustration {
   position: absolute;
   top: -4%;
   right: -2px;
   width: 40%;
 }
 
-.circle-one {
+.SatQazan .circle-one {
   top: 0;
   left: 0;
   z-index: -1;
@@ -98,7 +98,7 @@ body {
   -o-transform: translate(-45%, -45%);
 }
 
-.circle-two {
+.SatQazan .circle-two {
   bottom: 0;
   right: 0;
   z-index: -1;
@@ -108,13 +108,13 @@ body {
   -ms-transform: translate(45%, 45%);
   -o-transform: translate(45%, 45%);
 }
-.theme-btn-container {
+.SatQazan .theme-btn-container {
   position: absolute;
   left: 0px;
   bottom: 0;
 }
 
-.theme-btn {
+.SatQazan .theme-btn {
   cursor: pointer;
   transition: all 0.3s ease-in;
 }
@@ -160,14 +160,14 @@ body {
   .login-container p {
     font-size: 15px;
   }
-  .circle {
+  .container .circle {
     width: 6.5rem;
     height: 6.5rem;
   }
 
 }
 @media(max-width:420px){
-  .info-container p {
+  .info-SatQazan p {
     font-size: 14px;
     opacity: 0.8;
   }

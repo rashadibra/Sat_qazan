@@ -1,8 +1,11 @@
 import React from 'react'
-import {useState} from 'react'
-import  { useEffect } from 'react';
+import  { useEffect,useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './Category.css'
+import CategoryModal from './CategoryModal';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
+// OPEN/CLOSE MODAL
 
 function Categorys() {
   useEffect(() => {
@@ -19,8 +22,22 @@ function Categorys() {
   });
 }, []);
 
+// const [isCategoryModalOpen, setCategoryModalOpen] = useState(true);
+const [show, setShow] = useState(false);
+
+const handleClose = () => setShow(false);
+const handleShow = () => setShow(true);
+
   return (
     <div>
+        <Modal show={show} onHide={handleClose}>
+        {/* <Modal.Header closeButton>
+        </Modal.Header> */}
+        <Modal.Body>
+          <CategoryModal handleClose={handleClose}/>
+          </Modal.Body>
+      </Modal>
+ 
       <section className='Info-SatQazan'>
         <h1>Başlayın</h1>
         <p >Qruplarımızda və ya səhifələrimizə daxil ol, paylaşılan elanları paylaşıb müştəri taparaq gəlir əldə et.
@@ -28,9 +45,9 @@ function Categorys() {
         <b>Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız şərtdir.</b>
       </section>
     <section className="Category">
-    <div className=" Category-container scroll-reveal">
+    <div  className=" Category-container scroll-reveal">
 <div className="Category-circle Category-circle-one"></div>
-<div className="Category-info-container">
+<div  onClick={handleShow} className="Category-info-container" >
 <img src="" alt="" />
 <h1>Whatsapp</h1>
  <br />

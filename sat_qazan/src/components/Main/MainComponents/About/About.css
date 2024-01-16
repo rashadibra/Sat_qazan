@@ -5,6 +5,7 @@
     color: white;
     margin-top: 10px;
     font-family: "poppins";
+
 }
 .advantages>div{
     width: 90%;
@@ -15,12 +16,14 @@
     text-align: center; 
     padding-bottom: 10px;
 }
+
 .advantages .title img{
     border-radius: 10px;
 width: 150px;
 }
 
 .advantages .info{
+
     display: flex;
     /* justify-content:space-around ; */
     width:100% ;
@@ -30,6 +33,9 @@ width: 150px;
     padding-left: 10px ;
   border-left: 1px solid white;
   border-right: 1px solid white;
+}
+.ant-carousel{
+    width: 100%;
 }
 /* RULES */
 .rules{
@@ -97,7 +103,7 @@ width: 150px;
 .Header hr{
     color: #fff;
 }
-.Header >div b:nth-child(1){
+.Header >div b:nth-child(2){
     font-size: 35px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     color: #fff;
