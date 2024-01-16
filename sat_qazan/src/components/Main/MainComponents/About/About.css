@@ -103,7 +103,7 @@ width: 150px;
 .Header hr{
     color: #fff;
 }
-.Header >div b:nth-child(2){
+.Header >div b:nth-child(1){
     font-size: 35px;
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
     color: #fff;
