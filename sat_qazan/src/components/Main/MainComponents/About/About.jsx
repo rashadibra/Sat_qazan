@@ -112,14 +112,14 @@ function About() {
     <section className="Header scroll-reveal">
       <img src={Headerİmg2} alt="" />
       <div>
-        <b>Sat və Qazan ilə <br /> gəlir karvanı yolda!</b>
+        <b>SatQazan ilə <br /> gəlir karvanı yolda!</b>
         <br />
-        <b style={{borderBottom:'1px solid white'}}>Məhsullarımızın dəyərinin 15%-i sizin olsun!</b>
+        <b style={{borderBottom:'1px solid white'}}>Məhsullarımızın dəyərinin <br /> 15%-i sizin olsun!</b>
         {/* <hr /> */}
         <p style={{paddingTop:'10px'}}>Onlayn iş dünyasına sürətli bir giriş etmək <br />
            istərdinizmi? Sat Qazan ilə öz sosial media <br />
            hesablarınızdan gəlir əldə edin. <span>WhatsApp</span>,<br />
-            Instagram, TikTok... Hansını bəyənirsiniz?<br />
+            Instagram, TikTok...<br />
              İndi başlayın və qazanın!</p>
       </div>
     </section>
@@ -133,7 +133,7 @@ function About() {
             className="Containerillustration"
           />
               <h1>SatQazan nədir </h1>
-       <p>SatQazan, qeyri-adi alış-veriş təcrübəsi və heç bir maliyyə dəstəyi olmadan pul qazanmaq fürsəti təklif edən onlayn alış-satış platformasıdır. Saytımızda Linkləri yerləşdirilmiş sosial şəbəkələrimizə qoşulub məhsulları paylaşaraq, alıcı taparaq pul qazana bilərsiniz.</p>
+       <p>SatQazan, qeyri-adi alış-veriş təcrübəsi və heç bir maliyyə dəstəyi olmadan pul qazanmaq fürsəti təklif edən onlayn satış platformasıdır. Saytımızda Linkləri yerləşdirilmiş sosial şəbəkələrimizə qoşulub məhsulları paylaşaraq, alıcı taparaq pul qazana bilərsiniz.</p>
          <br />
          <hr />
          
@@ -145,7 +145,6 @@ function About() {
          <span className="Diqqet"><p>SatQazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
          
         </div>
-        {/* <div className="circle circle-two"></div> */}
       </div>
     </section>
     <section className="advantages ">
