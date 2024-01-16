@@ -114,7 +114,7 @@ function About() {
       <div>
         <b>Sat və Qazan ilə <br /> gəlir karvanı yolda!</b>
         <br />
-        <b style={{borderBottom:'1px solid white'}}>Məhsullarımızın 15%-i sizin olsun!</b>
+        <b style={{borderBottom:'1px solid white'}}>Məhsullarımızın dəyərinin 15%-i sizin olsun!</b>
         {/* <hr /> */}
         <p style={{paddingTop:'10px'}}>Onlayn iş dünyasına sürətli bir giriş etmək <br />
            istərdinizmi? Sat Qazan ilə öz sosial media <br />
