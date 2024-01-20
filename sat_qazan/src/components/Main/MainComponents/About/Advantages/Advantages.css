@@ -4,7 +4,7 @@
   background-color: #3dd4c3;
   color: white;
   margin-top: 10px;
-  font-family: "poppins";
+  font-family:sans-serif;
 }
 .advantages > div {
   width: 90%;
@@ -24,7 +24,6 @@
 .advantages .info {
   display: flex;
   width: 100%;
-  font-style: italic;
 }
 .advantages .info p {
   padding-left: 10px;

@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, { useState,useEffect } from 'react'
 import {Link} from 'react-router-dom'
 import './Rules.css'
-
+import ScrollReveal from 'scrollreveal'
 const howItworks = `<div class="rulesTitle">
 <h1 >SatQazan piramidası nədir?</h1>
 </div>
@@ -44,6 +44,47 @@ const businessPrinciples = `<div class="rulesTitle scroll-reveal">
 
 
 function Rules() {
+  // SCROLLREVEAL
+  useEffect(() => {
+    ScrollReveal().reveal('.from-far', {
+      origin: 'bottom',
+      distance: '50px', // Büyük negatif değer, öğelerin ekranın dışından kaymasını sağlar
+      duration: 800,
+      delay: 200,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    });
+    // ScrollReveal başlatma
+    ScrollReveal().reveal('.from-bottom', {
+      origin: 'bottom', // Alt
+      distance: '20px', // Mesafe
+      duration: 800, // Süre
+      delay: 200, // Gecikme
+      easing: 'cubic-bezier(0.5, 0, 0, 1)', // Animasyon eğrisi
+    });
+
+    ScrollReveal().reveal('.from-top', {
+      origin: 'top', // Üst
+      distance: '20px',
+      duration: 800,
+      delay: 200,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    });
+
+    ScrollReveal().reveal('.slide-from-left', {
+      distance: '30px', // Kayma mesafesi
+      origin: 'left', // Soldan gelme
+      duration: 800, // Animasyon süresi
+      easing: 'ease-in-out', // Animasyon eğrisi
+    });
+
+    ScrollReveal().reveal('.slide-from-right', {
+      distance: '30px', // Kayma mesafesi
+      origin: 'right', // Sağdan gelme
+      duration: 800, // Animasyon süresi
+      easing: 'ease-in-out', // Animasyon eğrisi
+    });
+  }, []); // Komponent yüklendiğinde sadece bir kez çalışacak
+  // SCROLREVEAL
     const [BtnActive, setBtnActive] = useState(true);
 
     const howItWorks = () => {
@@ -60,23 +101,23 @@ function Rules() {
     <section className="rules ">
     <div className="rulesBtns">
       <button
-        className={`RulesBtn1 ${BtnActive ? "activeRulesBtn" : ""}`}
+        className={`RulesBtn1 slide-from-left ${BtnActive ? "activeRulesBtn" : ""}`}
         onClick={() => howItWorks()}
       >
         SatQazan Piramidası
       </button>
       <button
-        className={`RulesBtn2 ${BtnActive ? "" : "activeRulesBtn"}`}
+        className={`RulesBtn2 slide-from-right ${BtnActive ? "" : "activeRulesBtn"}`}
         onClick={() => businessprinciples()}
       >
         İş prinsipləri
       </button>
     </div>
-    <div className="RulesContainer">
+    <div className="RulesContainer from-bottom">
       <div className="rulesTitle">
         <h1>SatQazan piramidası nədir?</h1>
       </div>
-      <div className="rulesInfo">
+      <div className="rulesInfo ">
         <p style={{ textAlign: "center", fontSize: "25px" }}>
           SatQazan piramidası: artan qazancın zirvəsinə qalxın!
         </p>

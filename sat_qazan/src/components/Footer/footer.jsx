@@ -1,43 +1,48 @@
-import React from 'react';
+import React,{useEffect} from 'react';
+import ScrollReveal from 'scrollreveal'
 import "./footer.css"
 import {Link} from 'react-router-dom'
-function Footer() {
-  return (
-    <div className='footer'>
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram,faWhatsapp,faFacebook,faTiktok } from '@fortawesome/free-brands-svg-icons'; // İnstagram simgesini buradan içe aktarın
 
-      <footer className="footer">
+function Footer() {
+  useEffect(() => {
+    // ScrollReveal başlatma
+    ScrollReveal().reveal('.from-bottom', {
+      origin: 'bottom', // Alt
+      distance: '20px', // Mesafe
+      duration: 800, // Süre
+      delay: 200, // Gecikme
+      easing: 'cubic-bezier(0.5, 0, 0, 1)', // Animasyon eğrisi
+    });
+
+    ScrollReveal().reveal('.from-top', {
+      origin: 'top', // Üst
+      distance: '20px',
+      duration: 800,
+      delay: 200,
+      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+    });
+  }, []); // Komponent yüklendiğinde sadece bir kez çalışacak
+
+  return (
  
-        <ul className="social-icon">
-          <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-          <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-          <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-          <li className="social-icon__item">
-            <a className="social-icon__link" href="#">
-              <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-          </li>
-        </ul>
-        <ul className="menu">
-          <li className="menu__item"><Link to='/' className="menu__link" href="#">Əsas səhifə</Link></li>
-          <li className="menu__item"><Link to='Categorys' className="menu__link" href="#">Bizə qoşul</Link></li>
-          <li className="menu__item"><Link to='Contact' className="menu__link" href="#">Bizimlə əlaqə</Link></li>
-        </ul>
-        <p>&copy;2024 Bütün hüquqlar qorunur.</p>
-        <a href="https://www.freepik.com/free-photo/3d-render-handshake-icon-isolated-business-concept_33062169.htm#query=3d%20money%20agreement&position=5&from_view=search&track=ais&uuid=ef70fe84-3529-4bbb-b75f-912b39835b3c">Image by upklyak</a> on Freepik
-      </footer>
-    </div>
+    <footer>
+    <ul class="icons from-top">
+        <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+        <li><a href="#"><FontAwesomeIcon icon={faInstagram} /></a></li>
+        <li><a href="#"><FontAwesomeIcon icon={faFacebook} /></a></li>
+        <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>
+    </ul>
+    <ul class="menu">
+            <li><Link to='/'>Ana səhifə</Link></li>
+            <li><Link to='/Categorys'>Başla</Link></li>
+            <li><Link to='Contact'>Bizimlə əlaqə</Link></li>
+    </ul>
+        <div class="footer-copyright from-bottom">
+            <p>&copy; 2024 Bütün hüquqlar qorunur.</p>
+        </div>
+</footer>
   );
 }
 

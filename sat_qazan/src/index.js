@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {BrowserRouter} from 'react-router-dom'
 import 'bootstrap/dist/css/bootstrap.min.css';
+// src/index.js veya src/index.jsx gibi giriş dosyanızda
 
 // import 'antd/dist/antd.css';
 
