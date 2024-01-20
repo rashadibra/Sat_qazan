@@ -1,0 +1,146 @@
+/* SatQazan */
+.SatQazan {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .SatQazan .info-SatQazan {
+    position: relative;
+    width: 100%;
+  }
+  .SatQazan .info-SatQazan p {
+    /* font-size: 20px; */
+    opacity: 0.8;
+  }
+  .SatQazan .form-SatQazan {
+    border: 1px solid hsla(0, 0%, 65%, 0.158);
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    backdrop-filter: blur(20px);
+    z-index: 99;
+    padding: 2rem;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+  }
+  
+  .SatQazan .circle {
+    width: 8rem;
+    height: 8rem;
+    background: #0ef6cc;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+  }
+  
+  .SatQazan .Containerillustration {
+    position: absolute;
+    top: -4%;
+    right: -2px;
+    width: 40%;
+  }
+  
+  .SatQazan .circle-one {
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transform: translate(-45%, -45%);
+    -webkit-transform: translate(-45%, -45%);
+    -moz-transform: translate(-45%, -45%);
+    -ms-transform: translate(-45%, -45%);
+    -o-transform: translate(-45%, -45%);
+  }
+  
+  .SatQazan .circle-two {
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    transform: translate(45%, 45%);
+    -webkit-transform: translate(45%, 45%);
+    -moz-transform: translate(45%, 45%);
+    -ms-transform: translate(45%, 45%);
+    -o-transform: translate(45%, 45%);
+  }
+  .SatQazan .theme-btn-container {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+  }
+  
+  .SatQazan .theme-btn {
+    cursor: pointer;
+    transition: all 0.3s ease-in;
+  }
+  
+  .SatQazan{
+    position: relative;
+  }
+  .Statics{
+    box-shadow: 0 0 36px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    position: absolute;
+    width: 40%;
+    height: 80px;
+    top: -40px;
+    z-index: 10;
+    background-color: rgb(0, 153, 255);
+    display: flex;
+    align-items: center;
+  }
+  .Statics div{
+    width: 49%;
+height: 40px;
+color: white;
+display: flex;
+align-items: center;
+justify-content: center;
+  }
+
+.SecondStatics{
+font-size: 400px;
+  text-align: center;
+  border-right: 1px solid white;
+}
+.thirdStatics{
+  text-align: center;
+}
+
+.TitleLine{
+  margin-top: 10px;
+  width:300px;
+  height: 1px;
+  border-radius: 10px;
+  background-color: #3dd4c3;
+}
+@media(min-width:600px){
+  .form-SatQazan h1{
+    font-size: 45px;
+  }
+  .form-SatQazan p{
+    font-size: 20px;
+  }
+}
+@media(max-width:600px){
+  .Statics{
+    width: 70%;
+    height: 34px;
+    top: -20px;
+  }
+  .Statics div{
+    height: 30px;
+
+  }
+.SecondStatics h3,.thirdStatics h3{
+  font-size: 15px;
+  margin-bottom:0 ;
+}
+
+  .form-SatQazan p{
+    font-size: 13px;
+  }
+}

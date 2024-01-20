@@ -1,13 +1,21 @@
 import React from 'react'
 import {useFormik} from 'formik';
+import * as Yup from 'yup';
+const PhoneRegex='/^(051|055|050|070|077|099|010)[0-9]{7}$/i'
 function CategoryModal({handleClose}) {
     const {values,handleChange,handleReset,handleSubmit} = useFormik({
         initialValues: {
           name:'',
           surname:'',
-          email: ''
-          
+          number: ''
         },
+        validationSchema: Yup.object({
+          name: Yup.string().required('Bu alan boş bırakılamaz'),
+          surname: Yup.string().required('Bu alan boş bırakılamaz'),
+          number: Yup.string().required('Bu alan boş bırakılamaz'),
+
+          // diğer inputlar için gerekli validasyonlar
+        }),
     onSubmit:values=>{
       console.log(values);
       handleReset()
@@ -26,6 +34,7 @@ function CategoryModal({handleClose}) {
           <h1 className="opacity">Form</h1>
           <form onSubmit={handleSubmit}>
           <input 
+          required="required"
           value={values.name}
           onChange={handleChange}
           type="text" 
@@ -39,13 +48,14 @@ function CategoryModal({handleClose}) {
           placeholder="Soyadınız" />
           
             <input 
-            value={values.email}
+            value={values.number}
             onChange={handleChange}
-            id='email'
-          type="text" 
-          placeholder="Emailiniz" />
+            id='number'
+          type="number" 
+          placeholder="Nömrəniz" />
             <button 
-            onClick={handleClose}
+            
+            onClick={ handleClose}
             className="opacity">GÖNDƏR</button>
           </form>
           <div className="register-forget opacity">

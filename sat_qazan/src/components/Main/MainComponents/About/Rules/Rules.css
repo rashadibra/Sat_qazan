@@ -1,0 +1,65 @@
+
+/* RULES */
+.rules{
+    margin-top:40px ;
+    width: 100%;
+}
+.rules>div:nth-child(2){
+    width: 95%;
+ margin: 20px auto;
+    border: 1px solid hsla(0, 0%, 65%, 0.441);
+ border-radius: 10px;
+}
+.rulesTitle{
+    font-size: 45px;
+    text-align: center;
+}
+.rulesInfo{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    font-family: "poppins";
+    font-size: 20px;
+}
+.rulesBtns{
+    display: flex;
+    justify-content: center;
+}
+.rulesBtns button{
+    width: 35%;
+    border: 0px;
+    transition: 0.3s;
+    font-size: 25px;
+    border-radius: 30px;
+   padding: 25px 90px;
+   margin: 0 20px;
+}
+.rulesBtns button:hover{
+    background-color: #3dd4c3;
+    color: white;
+}
+.activeRulesBtn{
+    background-color: #3dd4c3;
+    color: white;
+}
+
+/* PYRAMİD DİVS */
+
+
+@media(max-width:750px){
+    .rulesBtns button{
+        padding: 20px 25px;
+        font-size: 15px;
+    }
+}
+
+@media(max-width:700px){
+    .rulesInfo{
+        font-size: 15px;
+    }
+}
+@media (max-width:500px){
+    .rulesInfo{
+        font-size: 12px;
+    }
+}

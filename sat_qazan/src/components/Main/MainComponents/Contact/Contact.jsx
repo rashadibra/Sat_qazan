@@ -31,7 +31,7 @@ const ContactForm = () => {
 
     if (!emailRegex.test(inputValue) && inputValue !== '') {
       // Eğer geçerli bir e-posta değilse ve boş değilse, hata mesajı gösterilebilir.
-      console.log("Geçerli bir e-posta adresi girin.");
+      // console.log("Geçerli bir e-posta adresi girin.");
     }
   };
 

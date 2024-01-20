@@ -3,7 +3,6 @@ import  { useEffect,useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './Category.css'
 import CategoryModal from './CategoryModal';
-import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 // OPEN/CLOSE MODAL
 
@@ -25,14 +24,14 @@ function Categorys() {
 // const [isCategoryModalOpen, setCategoryModalOpen] = useState(true);
 const [show, setShow] = useState(false);
 
-const handleClose = () => setShow(false);
+const handleClose = () =>setShow(false);
 const handleShow = () => setShow(true);
 
   return (
     <div>
         <Modal show={show} onHide={handleClose}>
-        {/* <Modal.Header closeButton>
-        </Modal.Header> */}
+        <Modal.Header closeButton>
+        </Modal.Header>
         <Modal.Body>
           <CategoryModal handleClose={handleClose}/>
           </Modal.Body>
