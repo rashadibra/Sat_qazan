@@ -159,7 +159,7 @@ Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız ş�
         <p style={{ textAlign: "center" }}>
           Sizin hər satışınız hesablanır və müəyyən miqdarı keçdikdən sonra
           mərhələni keçməyiniz haqqında məlumatlandırılırsınız.Ətraflı{" "}
-          <Link to="/Categorys">Whatsapp</Link> qrupumuzda.
+          <a href="https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX">Whatsapp</a> qrupumuzda.
         </p>
         <b style={{ textAlign: "center" }}>
           Bu bənzərsiz piramidal quruluşla SatQazan, istifadəçilərinə geniş

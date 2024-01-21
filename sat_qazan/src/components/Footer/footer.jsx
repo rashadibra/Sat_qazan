@@ -29,7 +29,7 @@ function Footer() {
  
     <footer>
     <ul class="icons from-top">
-        <li><a href="#"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+        <li><a href="https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
         <li><a href="https://www.instagram.com/satqazan.az?igsh=MW5ieHhuZWhmbmRrbA=="><FontAwesomeIcon icon={faInstagram} /></a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61555768259797&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a></li>
         <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>

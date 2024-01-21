@@ -79,14 +79,14 @@ console.log(UserMessage);
             <div className="icon"><FontAwesomeIcon icon={faPhone} style={{color:"white"}} /></div>
             <div className="text">
               <h3>Telefon</h3>
-              <p>+(994)510-727-50-95</p>
+              <p>+(994)50-395-78-97</p>
             </div>
           </div>
           <div className="box">
             <div className="icon"><FontAwesomeIcon icon={faEnvelope} style={{color:"white"}}/></div>
             <div className="text">
               <h3>Email</h3>
-              <p>İbrahimlirsad666@gmail.com</p>
+              <p>satqazanoffical@gmail.com</p>
             </div>
           </div>
         </div>
