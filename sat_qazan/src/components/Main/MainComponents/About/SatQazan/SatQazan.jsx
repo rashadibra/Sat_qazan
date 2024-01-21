@@ -68,7 +68,7 @@ function SatQazan() {
          <p className='slide-from-right' style={{textAlign:'center',margin:'30px 0'}}> Mənfəətli Paylaşımlar:Məhsullarımızı paylaşaraq və alıcılar taparaq pul qazanın. </p>
          <p className='slide-from-left' style={{textAlign:'center',margin:'30px 0'}}>İcma dəstəyi:WhatsApp qrupları ilə əlaqə saxlayın, təcrübələrinizi bölüşün və cəmiyyətə töhfə verin.</p>
          <p className='slide-from-right' style={{textAlign:'center',margin:'30px 0'}}>Kateqoriyaların geniş diapazonu: Elektronikadan tutmuş modaya qədər geniş çeşiddə məhsullarla müxtəlifliyi hiss edin.</p>
-         <span className="Diqqet"><p style={{textAlign:'center',margin:'30px 0'}}>SatQazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
+         <span className="Diqqet slide-from-left"><p style={{textAlign:'center',margin:'30px 0'}}>SatQazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
          
         </div>
       </div>

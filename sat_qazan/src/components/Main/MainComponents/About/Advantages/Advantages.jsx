@@ -28,7 +28,7 @@ function Advantages() {
     });
     ScrollReveal().reveal('.fade-inLogo', {
       opacity: 0,
-      duration: 3800,
+      duration: 4000,
       easing: 'cubic-bezier(0.5, 0, 0, 1)',
     });
   }, []); // Komponent yüklendiğinde sadece bir kez çalışacak

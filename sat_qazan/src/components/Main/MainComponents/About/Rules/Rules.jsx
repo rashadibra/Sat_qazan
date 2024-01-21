@@ -4,6 +4,8 @@ import './Rules.css'
 import ScrollReveal from 'scrollreveal'
 const howItworks = `<div class="rulesTitle">
 <h1 >SatQazan piramidası nədir?</h1>
+<div class='TitleLine' style="margin:10px auto">
+</div>
 </div>
 <div class="rulesInfo">
 <p style='text-align:center;font-size:25px'>
@@ -25,6 +27,8 @@ SatQazan piramidası: artan qazancın zirvəsinə qalxın!
 `;
 const businessPrinciples = `<div class="rulesTitle scroll-reveal">
 <h1 >İş prinsipləri</h1>
+<div class='TitleLine' style="margin:10px auto">
+</div>
 </div>
 <div class="rulesInfo">
 <p>
@@ -116,6 +120,8 @@ function Rules() {
     <div className="RulesContainer from-bottom">
       <div className="rulesTitle">
         <h1>SatQazan piramidası nədir?</h1>
+        <div className='TitleLine' style={{margin:'10px auto'}}>
+              </div>
       </div>
       <div className="rulesInfo ">
         <p style={{ textAlign: "center", fontSize: "25px" }}>
@@ -146,7 +152,8 @@ function Rules() {
           imtiyazlar sizi gözləyir. Hər səviyyədə yüksəldikcə qazancınız
           eksponent olaraq artacaq!
           <br />
-         
+         <b>
+Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız şərtdir.</b>
         </p>
         <hr />
         <p style={{ textAlign: "center" }}>

@@ -24,14 +24,14 @@ footer .icons{
 }
 footer .icons a{
   background: #52527a;
-  color: #272727;
+  color: #ffffff;
   padding: 14px;
   font-size: 20px;
   border-radius: 100%;
   display: flex;
 }
 footer .icons a:hover{
-  color: #ffffff;
+  color: bisque;
   transition: 0.5s;
 }
 footer .menu{
