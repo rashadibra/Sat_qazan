@@ -14,7 +14,7 @@ SatQazan piramidası: artan qazancın zirvəsinə qalxın!
   <p>SatQazan piramidası (qazanc piramidası) qeyri-adi bir anlayışdır! Satış sayınız artdıqca yeni fürsətlər,imkanlar ilə qarşılaşın.</p>
   <p>3 mərhələdən ibrətdir: </p>
   <p>
-    1-ci mərhələ(Aşağı səviyyəli qazanc): məhsullarımızı paylaşaraq pul qazanın, ancaq bununla məhdudlaşmayın!dostlarınız və sosial şəbəkələrdəki izləyicilərinizlə qazanc əldə edin.
+    1-ci mərhələ(Aşağı səviyyəli qazanc): məhsulları paylaşaraq pul qazanın, ancaq bununla məhdudlaşmayın!dostlarınız və sosial şəbəkələrdəki izləyicilərinizlə qazanc əldə edin.
     <br />
     2-ci mərhələ(Orta səviyyəli mükafatlar): yalnız dairənizi genişləndirməyin, başqalarını SatQazan ailəsinə cəlb edin. Orta səviyyəli Qazanc və xüsusi mükafatlarla daha çox gəlir əldə edin.
 <br />
@@ -32,17 +32,17 @@ const businessPrinciples = `<div class="rulesTitle scroll-reveal">
 </div>
 <div class="rulesInfo">
 <p>
-1)Məhsulları izlə: Üzvünüz satış və qazanc proqramına qoşulub, təklif olunan məhsulları baxmağa və tanımağa başlayır.
+1)Məhsulları izlə:satış və qazanc proqramına qoşulun, təklif olunan məhsulları baxmağa və tanımağa başlayın.
 <br />
-2)Məhsul Şəkil və Xüsusiyyətlərinin Paylaşılması: Üzv, istədiyi məhsulun şəkil və xüsusiyyətlərini götürərək, öz sosial media hesabında paylaşmağa qərar verir. Bu, məhsulun tanıtımına yardım edir.
+2)Məhsul Şəkil və Xüsusiyyətlərinin Paylaşın:İstədiyi məhsulun şəkil və xüsusiyyətlərini götürərək, öz sosial media hesabında paylaşın. Bu, məhsulun tanıtımına yardım edin.
 <br />
-3)Yönləndirilmiş Alıcılar: siz, paylaşdığınız məhsulları ətrafınızda maraqlanan və məhsulu almağa qərar verən alıcıları tapmağa çalışırsız. Bu, sizin məhsulların satışından pul qazanmanıza imkan verir.
+3)Yönləndirilmiş Alıcılar:Paylaşdığınız məhsulları ətrafınızda maraqlanan və məhsulu almağa qərar verən alıcıları tapmağa çalışın. Bu, sizin məhsulların satışından pul qazanmanıza imkan verir.
 <br />
-4)Alıcıları Bizə Yönləndirir: Üzv, potensial alıcıları bizim tərəfə yönləndirir. Bu, alıcıların məhsulu almağa qərar verməsi üçün bir kömək və təsiri təmin edir.
+4)Alıcıları Bizə Yönləndirir:Potensial alıcıları bizim tərəfə yönləndirin. Bu, alıcıların məhsulu almağa qərar verməsi üçün bir kömək və təsiri təmin edir.
 <br />
-5)Məhsulu Təslim etmə və Ödəniş Almaq: Biz, üzvün təqdim etdiyi alıcıya məhsulu təqdim edirik və müqavilədə nəzərdə tutulan ödənişi qəbul edirik.
+5)Məhsulu Təslim etmə və Ödəniş Almaq: Biz, sizin təqdim etdiyiniz alıcıya məhsulu təqdim edirik və nəzərdə tutulan ödənişi qəbul edirik.
 <br />
-6)Anında Ödəniş: Üzvün əldə etdiyi qazancı mümkün olan ən qısa müddət ərzində ödəmək üçün tədbirlər görürük.
+6)Anında Ödəniş: Sizin əldə etdiyiniz qazancı mümkün olan ən qısa müddət ərzində ödənilir.
 </p>
 </div>`;
 
@@ -128,29 +128,22 @@ function Rules() {
           SatQazan piramidası: artan qazancın zirvəsinə qalxın!
         </p>
         <p>
-          SatQazan piramidası (qazanc piramidası) qeyri-adi bir anlayışdır!
-          Satış sayınız artdıqca yeni fürsətlər,imkanlar ilə qarşılaşım.
+        SatQazan piramidası (qazanc piramidası) qeyri-adi bir anlayışdır! Satış sayınız artdıqca yeni fürsətlər,imkanlar ilə qarşılaşın.
         </p>
         <p>3 mərhələdən ibrətdir: </p>
         <p> 
 
           <br />
          
-            3-cü mərhələ(Aşağı səviyyəli qazanc): öz məhsullarınızı paylaşaraq
-          pul qazanın, ancaq bununla məhdudlaşmayın! Həm də sizi izləyən
-          dostlarınız və izləyicilərinizlə ortaq gəlirdən qazanc əldə edin.
+          1-ci mərhələ(Aşağı səviyyəli qazanc): məhsulları paylaşaraq pul qazanın, 
+          ancaq bununla məhdudlaşmayın!dostlarınız və sosial şəbəkələrdəki izləyicilərinizlə qazanc əldə edin.
          
           <br />
-         2-ci mərhələ(Orta səviyyəli mükafatlar): yalnız dairənizi
-          genişləndirməyin, başqalarını SatQazan ailəsinə cəlb edin. Orta
-          səviyyəli Qazanc və xüsusi mükafatlarla daha çox gəlir əldə edin.
+          2-ci mərhələ(Orta səviyyəli mükafatlar): yalnız dairənizi genişləndirməyin, başqalarını SatQazan ailəsinə cəlb edin. Orta səviyyəli Qazanc və xüsusi mükafatlarla daha çox gəlir əldə edin.
          
           <br />
          
-            1-ci mərhələ(Pik performans bonusları):SatQazan piramidasının
-          zirvəsinə qalxdığınız zaman performans bonusları və xüsusi
-          imtiyazlar sizi gözləyir. Hər səviyyədə yüksəldikcə qazancınız
-          eksponent olaraq artacaq!
+          3-cü mərhələ(Pik performans bonusları):SatQazan piramidasının zirvəsinə qalxdığınız zaman performans bonusları və xüsusi imtiyazlar sizi gözləyir. Hər səviyyədə yüksəldikcə qazancınız eksponent olaraq artacaq!
           <br />
          <b>
 Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız şərtdir.</b>
