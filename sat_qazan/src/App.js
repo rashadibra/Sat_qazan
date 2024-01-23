@@ -7,11 +7,12 @@ import { useState } from 'react';
 function App() {
 const [ModalOpen, setModalOpen] = useState(false)
 const FormShow=()=>setModalOpen(true)
+const FormHide=()=>setModalOpen(false)
   return (
   <div>
     <Navbar/>
     <Main FormShow={FormShow}/>
-   {ModalOpen? <ModalForm/>:''}
+   {ModalOpen? <ModalForm FormHide={FormHide}/>:''}
     <Footer FormShow={FormShow}/>
   </div>
   );

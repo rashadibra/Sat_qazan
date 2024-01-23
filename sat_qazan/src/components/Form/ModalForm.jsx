@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import { Form, Modal, Button } from "react-bootstrap";
 
 const regexNumber = /^(0?)(51|50|55|70|77)\d{7}$/;
-function ModalForm() {
+function ModalForm({FormHide}) {
   const { values, handleChange, handleReset, handleSubmit } = useFormik({
     initialValues: {
       Name: "",
@@ -18,7 +18,9 @@ function ModalForm() {
   });
 
   const [show, setShow] = useState(true);
-  const handleClose = () => setShow(false);
+  const handleClose = () => {setShow(false);
+  FormHide()
+  }
 
   return (
     <div>
@@ -98,6 +100,7 @@ function ModalForm() {
                 else {
                   handleClose();
                   handleSubmit();
+                  FormHide()
                   window.location.href = "https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX";
                 }
               }}
