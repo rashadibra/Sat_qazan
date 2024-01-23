@@ -4,7 +4,7 @@
   background-color: #3dd4c3;
   color: white;
   margin-top: 10px;
-  font-family:sans-serif;
+  /* font-family:sans-serif; */
 }
 .advantages > div {
   width: 90%;
@@ -26,6 +26,7 @@
   width: 100%;
 }
 .advantages .info p {
+  font-family:sans-serif ;
   padding-left: 10px;
   border-left: 1px solid white;
   border-right: 1px solid white;

@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram,faWhatsapp,faFacebook,faTiktok } from '@fortawesome/free-brands-svg-icons'; // İnstagram simgesini buradan içe aktarın
 
-function Footer() {
+function Footer({handleShow}) {
   useEffect(() => {
     // ScrollReveal başlatma
     ScrollReveal().reveal('.from-bottom', {
@@ -29,7 +29,7 @@ function Footer() {
  
     <footer>
     <ul class="icons from-top">
-        <li><a href="https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX"><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+        <li onClick={()=>handleShow()} ><a><FontAwesomeIcon icon={faWhatsapp} /></a></li>
         <li><a href="https://www.instagram.com/satqazan.az?igsh=MW5ieHhuZWhmbmRrbA=="><FontAwesomeIcon icon={faInstagram} /></a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61555768259797&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a></li>
         <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>
@@ -38,7 +38,7 @@ function Footer() {
             <li><Link to='/'>Ana səhifə</Link></li>
             <li><Link to='Contact'>Bizimlə əlaqə</Link></li>
     </ul>
-        <div class="footer-copyright from-bottom">
+        <div class="footer-copyright">
             <p>&copy; 2024 Bütün hüquqlar qorunur.</p>
         </div>
 </footer>

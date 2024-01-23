@@ -6,6 +6,7 @@ import Categorys from './MainComponents/Category/Categorys'
 import './main.css'
 
 function main() {
+
   return (
     <div className='main'>
         <Routes>

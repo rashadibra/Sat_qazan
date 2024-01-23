@@ -39,6 +39,7 @@
         display: flex;
         padding-left: 0;
         margin-bottom:0 ;
+        margin-top: 10px;
     }
     
     nav ul li {
@@ -61,16 +62,16 @@
     nav .menu {
         display: none;
         position: absolute;
-        top: 0.75rem;
+        top: 1.50rem;
         right: 0.5rem;
         flex-direction: column;
         justify-content: space-between;
-        width: 2.25rem;
+        width: 2.40rem;
         height: 2rem;
     }
     
     nav .menu span {
-        height: 0.4rem;
+        height: 0.3rem;
         width: 100%;
         background-color: #fff;
         border-radius: 0.2rem;

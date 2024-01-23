@@ -2,7 +2,7 @@ import React from 'react'
 import  { useEffect,useState } from 'react';
 import ScrollReveal from 'scrollreveal';
 import './Category.css'
-import CategoryModal from './CategoryModal';
+import CategoryModal from '../About/CategoryModal';
 import Modal from 'react-bootstrap/Modal';
 // OPEN/CLOSE MODAL
 

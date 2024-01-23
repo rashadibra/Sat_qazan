@@ -15,9 +15,9 @@ function Navbar() {
         <span></span>
       </div>
       <ul className={menuOpen ? "open" : ""}>
-      <li><NavLink to='/'>Əsas səhifə</NavLink></li>
+      <li onClick={() => setMenuOpen(!menuOpen)}><NavLink to='/'>Əsas səhifə</NavLink></li>
       {/* <li ><NavLink style={{backgroundColor:'#3dd4c3'}} to='/Categorys'>Başla</NavLink></li> */}
-      <li><NavLink to='/Contact'>Bizimlə əlaqə</NavLink></li>
+      <li onClick={() => setMenuOpen(!menuOpen)}><NavLink to='/Contact'>Bizimlə əlaqə</NavLink></li>
       </ul>
     </nav>
   );

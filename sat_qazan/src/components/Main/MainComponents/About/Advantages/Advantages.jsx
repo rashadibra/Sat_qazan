@@ -46,11 +46,8 @@ function Advantages() {
             <div>
               <h3 style={contentStyle}>
                 <p>
-                  Sərmayə qoymadan qazanc əldə edin:Sat Qazan öz
-                  istifadəçilərinə pul qazanmaq üçün heç bir ilkin investisiya
-                  qoymadan gəlir əldə etmək imkanı təqdim edir. Pulsuz başlayın,
-                  məhsulları öz sosial media hesablarınızda paylaşın və
-                  qazanmağa başlayın.
+              Heç bir sərmayə sərf etmədən  şəxsi onlayn  biznesinizi qurmaq imkanı yaradırıq. <br />
+                 Satdığınız məhsulu istənilən ünvana çatdırırıq.
                 </p>
               </h3>
             </div>
@@ -58,11 +55,8 @@ function Advantages() {
               <h3 style={contentStyle}>
                 {" "}
                 <p>
-                  <b>Azad qrafik:</b> Sat Qazan istifadəçilərə öz sürətlərində
-                  işləmək azadlığı verir. Öz məhsullarınızı paylaşın,
-                  müştəriləri cəlb edin və gəlirinizi artırın. İşinizə tam
-                  nəzarət edirsiniz, ona görə də öz tempinizdə və cədvəlinizdə
-                  işləyə bilərsiniz.
+                  Sizin sata biləcəyiniz və təklif etdiyiniz məhsulları təqdim edirik. <br />
+               Müştərilərinizə endirimli kampaniyalar və sərfəli təkliflər etməyinizə zəmin yaradırıq.
                 </p>
               </h3>
             </div>
@@ -70,12 +64,9 @@ function Advantages() {
               <h3 style={contentStyle}>
                 {" "}
                 <p>
-                  <b>Müştəriləri tapın, indi qazanın:</b>Platforma öz
-                  istifadəçilərinə tez və effektiv şəkildə pul qazanmaq imkanı
-                  təqdim edir. Sat Qazan ilə öz müştəri bazanızı yaradın,
-                  məhsullarınızı paylaşın və ani ödənişlərlə qazancınızı əldə
-                  edin. İstifadəsi asan və praktiki prosesləri ilə gəlir əldə
-                  etmək heç vaxt asan olmayıb.
+                Hər ay sonu fəal üzvlərimizə supriz hədiyyələr və pul mükafatları təqdim edirik. <br />
+                Sizin üçün günün 16 saatı operativ xidmət göstəririk.
+
                 </p>{" "}
               </h3>
             </div>

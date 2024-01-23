@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import { Form, Modal, Button } from 'react-bootstrap';
-function ModalForm() {
+function ModalForm({handleShow}) {
   const { values, handleChange, handleReset,handleSubmit } = useFormik({
     initialValues: {
       Name: "",
@@ -17,16 +17,14 @@ function ModalForm() {
   });
 
   const [show, setShow] = useState(false);
-
-  const handleShow = () => setShow(true);
+  setShow(handleShow)
   const handleClose = () => setShow(false);
 
- 
   return (
     <div>
-     <Button variant="primary" onClick={handleShow}>
+     {/* <Button variant="primary" onClick={handleShow}>
         Open Modal
-      </Button>
+      </Button> */}
 
       <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
