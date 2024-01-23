@@ -1,10 +1,9 @@
 /* ADVANTAGES */
 .advantages {
   width: 100%;
-  background-color: #3dd4c3;
+  background-color: rgb(0, 153, 255);
   color: white;
   margin-top: 10px;
-  /* font-family:sans-serif; */
 }
 .advantages > div {
   width: 90%;

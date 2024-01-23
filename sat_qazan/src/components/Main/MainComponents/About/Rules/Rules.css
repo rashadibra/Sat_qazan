@@ -35,11 +35,12 @@ text-align: center;
    margin: 0 20px;
 }
 .rulesBtns button:hover{
-    background-color: #3dd4c3;
+    background-color: rgb(0, 153, 255);
     color: white;
 }
 .activeRulesBtn{
-    background-color: #3dd4c3;
+    /* background-color: #3dd4c3; */
+    background-color: rgb(0, 153, 255);
     color: white;
 }
 
