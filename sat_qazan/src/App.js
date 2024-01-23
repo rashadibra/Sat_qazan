@@ -8,15 +8,15 @@ function App() {
 // const [Modalİ, setModalİ] = useState(false)
 // const [show, setShow] = useState(false);
 // const handleClose = () => setShow(false);
-const handleShow=()=>{
-return true
-}
+// const handleShow=()=>{
+// return true
+// }
   return (
   <div>
     <Navbar/>
     <Main />
-    <ModalForm handleShow={handleShow}/>
-    <Footer handleShow={handleShow}/>
+    {/* <ModalForm/> */}
+    <Footer />
   </div>
   );
 }
