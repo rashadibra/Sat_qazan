@@ -5,12 +5,12 @@ import Contact from './MainComponents/Contact/Contact'
 import Categorys from './MainComponents/Category/Categorys'
 import './main.css'
 
-function main() {
+function main({FormShow}) {
 
   return (
     <div className='main'>
         <Routes>
-          <Route path='/' element={<About/>}/>
+          <Route path='/' element={<About FormShow={FormShow}/>}/>
           <Route path='/Contact' element={<Contact/>}/>
           <Route path='/Categorys' element={<Categorys/>}/>
         </Routes>

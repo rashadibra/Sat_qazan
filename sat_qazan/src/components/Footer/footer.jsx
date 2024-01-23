@@ -5,7 +5,7 @@ import {Link} from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram,faWhatsapp,faFacebook,faTiktok } from '@fortawesome/free-brands-svg-icons'; // İnstagram simgesini buradan içe aktarın
 
-function Footer({handleShow}) {
+function Footer({FormShow}) {
   useEffect(() => {
     // ScrollReveal başlatma
     ScrollReveal().reveal('.from-bottom', {
@@ -29,7 +29,7 @@ function Footer({handleShow}) {
  
     <footer>
     <ul class="icons from-top">
-        <li onClick={()=>handleShow()} ><a><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+        <li onClick={()=>FormShow()} ><a href style={{cursor:'pointer'}}><FontAwesomeIcon icon={faWhatsapp} /></a></li>
         <li><a href="https://www.instagram.com/satqazan.az?igsh=MW5ieHhuZWhmbmRrbA=="><FontAwesomeIcon icon={faInstagram} /></a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61555768259797&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a></li>
         <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>

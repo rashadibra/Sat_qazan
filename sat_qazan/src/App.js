@@ -5,18 +5,14 @@ import Footer from './components/Footer/footer'
 import ModalForm from './components/Form/ModalForm'
 import { useState } from 'react';
 function App() {
-// const [Modalİ, setModalİ] = useState(false)
-// const [show, setShow] = useState(false);
-// const handleClose = () => setShow(false);
-// const handleShow=()=>{
-// return true
-// }
+const [ModalOpen, setModalOpen] = useState(false)
+const FormShow=()=>setModalOpen(true)
   return (
   <div>
     <Navbar/>
-    <Main />
-    {/* <ModalForm/> */}
-    <Footer />
+    <Main FormShow={FormShow}/>
+   {ModalOpen? <ModalForm/>:''}
+    <Footer FormShow={FormShow}/>
   </div>
   );
 }

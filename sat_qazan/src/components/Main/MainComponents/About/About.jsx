@@ -11,7 +11,7 @@ import Modal from 'react-bootstrap/Modal';
 import CategoryModal from './CategoryModal';
 
 
-function About() {
+function About({FormShow}) {
  
 
   // FORMIK
@@ -45,8 +45,7 @@ function About() {
   const [show, setShow] = useState(false);
 
 const handleClose = () =>setShow(false);
-const handleShow = () => setShow(true);
-const ModalOpen = () => setShow(true);
+
   return (
     <div>
        <Modal show={show} onHide={handleClose}>
@@ -59,7 +58,7 @@ const ModalOpen = () => setShow(true);
       <AboutHeader />
       <SatQazan />
       <Advantages />
-      <Rules />
+      <Rules FormShow={FormShow} />
     </div>
   );
 }

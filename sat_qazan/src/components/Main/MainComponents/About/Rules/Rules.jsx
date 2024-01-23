@@ -47,7 +47,7 @@ const businessPrinciples = `<div class="rulesTitle scroll-reveal">
 </div>`;
 
 
-function Rules() {
+function Rules({FormShow}) {
   // SCROLLREVEAL
   useEffect(() => {
     ScrollReveal().reveal('.from-far', {
@@ -152,7 +152,7 @@ Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız ş�
         <p style={{ textAlign: "center" }}>
           Sizin hər satışınız hesablanır və müəyyən miqdarı keçdikdən sonra
           mərhələni keçməyiniz haqqında məlumatlandırılırsınız.Ətraflı{" "}
-          <a href="https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX">Whatsapp</a> qrupumuzda.
+          <a style={{cursor:'pointer',color:'green'}} onClick={()=>FormShow()}>Whatsapp</a> qrupumuzda.
         </p>
         <b style={{ textAlign: "center" }}>
           Bu bənzərsiz piramidal quruluşla SatQazan, istifadəçilərinə geniş
