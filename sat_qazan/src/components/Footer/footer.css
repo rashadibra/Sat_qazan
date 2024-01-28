@@ -30,10 +30,7 @@ footer .icons a{
   border-radius: 100%;
   display: flex;
 }
-footer .icons a:hover{
-  color: bisque;
-  transition: 0.5s;
-}
+
 footer .menu{
   padding-left: 0;
 }

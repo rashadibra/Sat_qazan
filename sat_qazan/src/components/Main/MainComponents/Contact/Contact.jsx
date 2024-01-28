@@ -28,11 +28,6 @@ const ContactForm = () => {
 
     // E-posta doğrulama regex'i
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-    if (!emailRegex.test(inputValue) && inputValue !== '') {
-      // Eğer geçerli bir e-posta değilse ve boş değilse, hata mesajı gösterilebilir.
-      // console.log("Geçerli bir e-posta adresi girin.");
-    }
   };
 
   const handleMessageChange = (e) => {
@@ -71,7 +66,7 @@ console.log(UserMessage);
     <section className="contact scroll-reveal">
       <div className="content">
         <h2>Bizimlə əlaqə</h2>
-        <p>İrad, rəy və iş birliyi üçün bizə mesaj göndərin. 3 gün ərzində mesajınız dəyərləndiriləcək</p>
+        <p>Rəy və iş birliyi üçün bizə mesaj göndərin. 24 saat ərzində mesajınız dəyərləndiriləcək.</p>
       </div>
       <div className="container">
         <div className="contactInfo">
@@ -95,15 +90,15 @@ console.log(UserMessage);
             <h2>Mesaj göndərin</h2>
             <div className="inputBox">
               <input type="text" required="required" value={name} onChange={handleNameChange} />
-              <span>Adınız</span>
+              <span> Adınız</span>
             </div>
             <div className="inputBox">
               <input type="email" required="required" value={email} onChange={handleEmailChange} />
-              <span>Email</span>
+              <span> Email</span>
             </div>
             <div className="inputBox">
               <textarea required="required" value={message} onChange={handleMessageChange}></textarea>
-              <span>Mesaj yazın</span>
+              <span> Mesaj yazın</span>
             </div>
             <div className="inputBox">
               <input className='inputBox_btn' type="submit" value="Göndər"/>

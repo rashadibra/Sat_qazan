@@ -28,17 +28,17 @@ function Footer({FormShow}) {
   return (
  
     <footer>
-    <ul class="icons from-top">
-        <li onClick={()=>FormShow()} ><a href style={{cursor:'pointer'}}><FontAwesomeIcon icon={faWhatsapp} /></a></li>
+    <ul className="icons from-top">
+        <li onClick={()=>FormShow()} ><a className='FooterWp' style={{cursor:'pointer',color:"white"}}><FontAwesomeIcon icon={faWhatsapp} /></a></li>
         <li><a href="https://www.instagram.com/satqazan.az?igsh=MW5ieHhuZWhmbmRrbA=="><FontAwesomeIcon icon={faInstagram} /></a></li>
         <li><a href="https://www.facebook.com/profile.php?id=61555768259797&mibextid=ZbWKwL"><FontAwesomeIcon icon={faFacebook} /></a></li>
         <li><a href="#"><FontAwesomeIcon icon={faTiktok} /></a></li>
     </ul>
-    <ul class="menu">
+    <ul className="menu">
             <li><Link to='/'>Ana səhifə</Link></li>
             <li><Link to='Contact'>Bizimlə əlaqə</Link></li>
     </ul>
-        <div class="footer-copyright">
+        <div className="footer-copyright">
             <p>&copy; 2024 Bütün hüquqlar qorunur.</p>
         </div>
 </footer>

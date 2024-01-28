@@ -101,7 +101,7 @@ function ModalForm({FormHide}) {
                   handleClose();
                   handleSubmit();
                   FormHide()
-                  window.location.href = "https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX";
+                  window.open("https://chat.whatsapp.com/IVYfcE8cGQq9A18dyWfXOX", "_blank")
                 }
               }}
             >

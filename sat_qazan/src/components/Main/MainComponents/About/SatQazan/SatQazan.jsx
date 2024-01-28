@@ -58,15 +58,13 @@ function SatQazan() {
               <div className='TitleLine' style={{margin:'10px auto'}}>
               </div>
                </h1 >
-       <p className='slide-from-right' style={{textAlign:'center',margin:'30px 0'}}>SatQazan heç bir maliyyə dəstəyi olmadan pul qazanmaq fürsəti təklif edən onlayn satış platformasıdır. Saytımızda linkləri yerləşdirilmiş sosial şəbəkələrimizə qoşulun və məhsulları paylaşaraq, alıcı taparaq pul qazaın.</p>
+       <p className='slide-from-right' style={{textAlign:'center',margin:'30px 0'}}>SatQazan heç bir maliyyə dəstəyi olmadan biznes yaratmaq fürsəti təklif edən onlayn satış platformasıdır. Saytımızda linkləri yerləşdirilmiş sosial şəbəkələrimizə qoşulun və məhsulları paylaşaraq, alıcı taparaq pul qazaın.</p>
          <br />
          <hr />
-         
          <h1 className='from-top' style={{textAlign:'center',margin:'30px 0'}}>Niyə SatQazan <br /><div className='TitleLine' style={{margin:'10px auto'}}>
               </div> </h1>
          <p className='slide-from-left' style={{textAlign:'center',margin:'30px 0'}}>Mənfəətli Paylaşımlar:Məhsulları paylaşaraq və alıcılar taparaq pul qazanın.</p>
          <p className='slide-from-right' style={{textAlign:'center',margin:'30px 0'}}>İstifadəsi asan:İstifadəçi dostu interfeysimizlə tez işə başlayın.  </p>
-         {/* <p className='slide-from-left' style={{textAlign:'center',margin:'30px 0'}}>İcma dəstəyi:WhatsApp qrupuna  ilə əlaqə saxlayın, təcrübələrinizi bölüşün və cəmiyyətə töhfə verin.</p> */}
          <p className='slide-from-right' style={{textAlign:'center',margin:'30px 0'}}>Kateqoriyaların geniş diapazonu: Elektronikadan tutmuş modaya qədər geniş çeşiddə məhsullarla müxtəlifliyi hiss edin.</p>
          <span className="Diqqet slide-from-left"><p style={{textAlign:'center',margin:'30px 0'}}>SatQazan alış-veriş və sərfəli əlaqələrin görüşmə nöqtəsidir. Bu maraqlı səyahətə qoşulun, məhsulları paylaşın və qazanın!</p></span>
          

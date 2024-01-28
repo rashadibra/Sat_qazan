@@ -1,7 +1,7 @@
-import React, { useState,useEffect } from 'react'
-import {Link} from 'react-router-dom'
-import './Rules.css'
-import ScrollReveal from 'scrollreveal'
+import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+import "./Rules.css";
+import ScrollReveal from "scrollreveal";
 const howItworks = `<div class="rulesTitle">
 <h1 >SatQazan piramidası nədir?</h1>
 <div class='TitleLine' style="margin:10px auto">
@@ -46,124 +46,149 @@ const businessPrinciples = `<div class="rulesTitle scroll-reveal">
 </p>
 </div>`;
 
-
-function Rules({FormShow}) {
+function Rules({ FormShow }) {
   // SCROLLREVEAL
   useEffect(() => {
-    ScrollReveal().reveal('.from-far', {
-      origin: 'bottom',
-      distance: '50px', // Büyük negatif değer, öğelerin ekranın dışından kaymasını sağlar
+    ScrollReveal().reveal(".from-far", {
+      origin: "bottom",
+      distance: "50px", // Büyük negatif değer, öğelerin ekranın dışından kaymasını sağlar
       duration: 800,
       delay: 200,
-      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      easing: "cubic-bezier(0.5, 0, 0, 1)",
     });
     // ScrollReveal başlatma
-    ScrollReveal().reveal('.from-bottom', {
-      origin: 'bottom', // Alt
-      distance: '20px', // Mesafe
+    ScrollReveal().reveal(".from-bottom", {
+      origin: "bottom", // Alt
+      distance: "20px", // Mesafe
       duration: 800, // Süre
       delay: 200, // Gecikme
-      easing: 'cubic-bezier(0.5, 0, 0, 1)', // Animasyon eğrisi
+      easing: "cubic-bezier(0.5, 0, 0, 1)", // Animasyon eğrisi
     });
 
-    ScrollReveal().reveal('.from-top', {
-      origin: 'top', // Üst
-      distance: '20px',
+    ScrollReveal().reveal(".from-top", {
+      origin: "top", // Üst
+      distance: "20px",
       duration: 800,
       delay: 200,
-      easing: 'cubic-bezier(0.5, 0, 0, 1)',
+      easing: "cubic-bezier(0.5, 0, 0, 1)",
     });
 
-    ScrollReveal().reveal('.slide-from-left', {
-      distance: '30px', // Kayma mesafesi
-      origin: 'left', // Soldan gelme
+    ScrollReveal().reveal(".slide-from-left", {
+      distance: "30px", // Kayma mesafesi
+      origin: "left", // Soldan gelme
       duration: 800, // Animasyon süresi
-      easing: 'ease-in-out', // Animasyon eğrisi
+      easing: "ease-in-out", // Animasyon eğrisi
     });
 
-    ScrollReveal().reveal('.slide-from-right', {
-      distance: '30px', // Kayma mesafesi
-      origin: 'right', // Sağdan gelme
+    ScrollReveal().reveal(".slide-from-right", {
+      distance: "30px", // Kayma mesafesi
+      origin: "right", // Sağdan gelme
       duration: 800, // Animasyon süresi
-      easing: 'ease-in-out', // Animasyon eğrisi
+      easing: "ease-in-out", // Animasyon eğrisi
     });
   }, []); // Komponent yüklendiğinde sadece bir kez çalışacak
   // SCROLREVEAL
-    const [BtnActive, setBtnActive] = useState(true);
+  const [BtnActive, setBtnActive] = useState(true);
 
-    const howItWorks = () => {
-      const RulesContainer = document.querySelector(".RulesContainer");
-      RulesContainer.innerHTML = howItworks;
-      setBtnActive(true);
-    };
-    const businessprinciples = () => {
-      const RulesContainer = document.querySelector(".RulesContainer");
-      RulesContainer.innerHTML = businessPrinciples;
-      setBtnActive(false);
-    };
+  const howItWorks = () => {
+    const RulesContainer = document.querySelector(".RulesContainer");
+    RulesContainer.innerHTML = howItworks;
+    setBtnActive(true);
+  };
+  const businessprinciples = () => {
+    const RulesContainer = document.querySelector(".RulesContainer");
+    RulesContainer.innerHTML = businessPrinciples;
+    setBtnActive(false);
+  };
   return (
     <section className="rules ">
-    <div className="rulesBtns">
-      <button
-        className={`RulesBtn1 slide-from-left ${BtnActive ? "activeRulesBtn" : ""}`}
-        onClick={() => howItWorks()}
-      >
-        SatQazan Piramidası
-      </button>
-      <button
-        className={`RulesBtn2 slide-from-right ${BtnActive ? "" : "activeRulesBtn"}`}
-        onClick={() => businessprinciples()}
-      >
-        İş prinsipləri
-      </button>
-    </div>
-    <div className="RulesContainer from-bottom">
-      <div className="rulesTitle">
-        <h1>SatQazan piramidası nədir?</h1>
-        <div className='TitleLine' style={{margin:'10px auto'}}>
-              </div>
+      <div className="rulesBtns">
+        <button
+          className={`RulesBtn1 slide-from-left ${
+            BtnActive ? "activeRulesBtn" : ""
+          }`}
+          onClick={() => howItWorks()}
+        >
+          SatQazan Piramidası
+        </button>
+        <button
+          className={`RulesBtn2 slide-from-right ${
+            BtnActive ? "" : "activeRulesBtn"
+          }`}
+          onClick={() => businessprinciples()}
+        >
+          İş prinsipləri
+        </button>
       </div>
-      <div className="rulesInfo ">
-        <p style={{ textAlign: "center", fontSize: "25px" }}>
-          SatQazan piramidası: artan qazancın zirvəsinə qalxın!
-        </p>
-        <p>
-        SatQazan piramidası (qazanc piramidası) qeyri-adi bir anlayışdır! Satış sayınız artdıqca yeni fürsətlər,imkanlar ilə qarşılaşın.
-        </p>
-        <p>3 mərhələdən ibarətdir: </p>
-        <p> 
+      <div className="RulesContainer from-bottom">
+        <div className="rulesTitle">
+          <h1>SatQazan piramidası nədir?</h1>
+          <div className="TitleLine" style={{ margin: "10px auto" }}></div>
+        </div>
+        <div className="rulesInfo ">
+          <p style={{ textAlign: "center", fontSize: "25px" }}>
+            SatQazan piramidası: artan qazancın zirvəsinə qalxın!
+          </p>
+          <p>
+            SatQazan piramidası (qazanc piramidası) qeyri-adi bir anlayışdır!
+            Satış sayınız artdıqca yeni fürsətlər,imkanlar ilə qarşılaşın.
+          </p>
+          <p>3 mərhələdən ibarətdir: </p>
+          <p>
+            <br />
+            3-cü dərəcə(Aşağı səviyyəli qazanc): məhsulları paylaşaraq pul
+            qazanın, ancaq bununla məhdudlaşmayın!dostlarınız və sosial
+            şəbəkələrdəki izləyicilərinizlə qazanc əldə edin.
 
-          <br />
-         
-          3-cü dərəcə(Aşağı səviyyəli qazanc): məhsulları paylaşaraq pul qazanın, 
-          ancaq bununla məhdudlaşmayın!dostlarınız və sosial şəbəkələrdəki izləyicilərinizlə qazanc əldə edin.
-         
-          <br />
-          2-ci dərəcə(Orta səviyyəli mükafatlar): yalnız dairənizi genişləndirməyin, başqalarını SatQazan ailəsinə cəlb edin. Orta səviyyəli Qazanc və xüsusi mükafatlarla daha çox gəlir əldə edin.
-         
-          <br />
-         
-          1-ci dərəcə(Pik performans bonusları):SatQazan piramidasının zirvəsinə qalxdığınız zaman performans bonusları və xüsusi imtiyazlar sizi gözləyir. Hər səviyyədə yüksəldikcə qazancınız eksponent olaraq artacaq!
-          <br />
-         <b>
-Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuzda olmağınız şərtdir.</b>
-        </p>
-        <hr />
-        <p style={{ textAlign: "center" }}>
-          Sizin hər satışınız hesablanır və müəyyən miqdarı keçdikdən sonra
-          mərhələni keçməyiniz haqqında məlumatlandırılırsınız.Ətraflı{" "}
-          <a style={{cursor:'pointer',color:'#00a884',textDecoration:'underline'}} onClick={()=>FormShow()}>Whatsapp</a> qrupumuzda.
-        </p>
-        <b style={{ textAlign: "center" }}>
-          Bu bənzərsiz piramidal quruluşla SatQazan, istifadəçilərinə geniş
-          qazanc potensialı təqdim edərək adi gəlir modellərini üstələyir.
-          SatQazan piramidası ilə başlayın, paylaşın, inkişaf edin və yüksək
-          gəlirlərdən zövq alın!
-        </b>
+          </p>
+          <hr />
+          <p>
+            {" "}
+            2-ci dərəcə(Orta səviyyəli mükafatlar): yalnız dairənizi
+            genişləndirməyin, başqalarını SatQazan ailəsinə cəlb edin. Orta
+            səviyyəli Qazanc və xüsusi mükafatlarla daha çox gəlir əldə edin.
+          </p>
+          <hr />
+          <p>
+            {" "}
+            1-ci dərəcə(Pik performans bonusları):SatQazan piramidasının
+            zirvəsinə qalxdığınız zaman performans bonusları və xüsusi
+            imtiyazlar sizi gözləyir. Hər səviyyədə yüksəldikcə qazancınız
+            eksponent olaraq artacaq!
+          </p>
+          <hr />
+          <p>
+            <b>
+              Qeyd:SatQazan piramidinə qoşulmaq üçün Whatsapp qrupumuza
+              qoşulmağınız şərtdir.
+            </b>
+          </p>
+
+          <p style={{ textAlign: "center" }}>
+            Sizin hər satışınız hesablanır və müəyyən miqdarı keçdikdən sonra
+            mərhələni keçməyiniz haqqında məlumatlandırılırsınız.Ətraflı{" "}
+            <a
+              style={{
+                cursor: "pointer",
+                color: "#00a884",
+                textDecoration: "underline",
+              }}
+              onClick={() => FormShow()}
+            >
+              Whatsapp
+            </a>{" "}
+            qrupumuzda.
+          </p>
+          <b style={{ textAlign: "center" }}>
+            Bu bənzərsiz piramidal quruluşla SatQazan, istifadəçilərinə geniş
+            qazanc potensialı təqdim edərək adi gəlir modellərini üstələyir.
+            SatQazan piramidası ilə başlayın, paylaşın, inkişaf edin və yüksək
+            gəlirlərdən zövq alın!
+          </b>
+        </div>
       </div>
-    </div>
-  </section>
-  )
+    </section>
+  );
 }
 
-export default Rules
+export default Rules;
